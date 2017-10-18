@@ -4,8 +4,8 @@
 
 # Site
 title: echo
-subtitle: 爱生活爱编码
-description: hello,every body!~
+subtitle: 十年大计，日拱一卒
+description: 人太容易在实际中走失，驻足于路上的奇观美景，而忘了原本是要去哪儿。 — 《想念地坛》
 author: Echo Guan
 language: zh-CN
 timezone:
@@ -72,6 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+theme: yilia
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -85,3 +86,23 @@ feed:
   path: atom.xml
   limit: 20
   hub:
+
+# themes/yilia
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
