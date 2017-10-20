@@ -100,6 +100,7 @@ deploy:
   repo: https://github.com/echoguan/echoguan.github.io.git,master
   branch: master
 
+# RSS
 feed:
   type: atom
   path: atom.xml
