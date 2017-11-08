@@ -1,7 +1,7 @@
 ---
 title: 将Blog同时托管在Coding和GitHub
 date: 2017-11-08 14:02:17
-categories: hexo
+categories: 技术
 tags: [hexo,blog]
 ---
 
