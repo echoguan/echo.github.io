@@ -127,3 +127,7 @@ jsonContent:
     excerpt: false
     categories: false
     tags: true
+
+# 搜索引擎
+sitemap:
+    path: sitemap.xml
