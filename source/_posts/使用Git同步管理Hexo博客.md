@@ -1,5 +1,5 @@
 ---
-title: 使用Git管理Hexo博客
+title: 使用Git同步管理Hexo博客
 date: 2017-10-19 13:35:21
 categories: 技术
 tags: [hexo,blog]
