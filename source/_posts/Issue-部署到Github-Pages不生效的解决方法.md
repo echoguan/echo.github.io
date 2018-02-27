@@ -1,8 +1,12 @@
 ---
 title: 'Issue: 部署到Github Pages不生效的解决方法'
-date: 2017-10-19 14:14:06
 categories: 技术
-tags: [hexo,blog,issue]
+tags:
+  - hexo
+  - blog
+  - issue
+abbrlink: 24856
+date: 2017-10-19 14:14:06
 ---
 # 部署之后，页面不生效
 

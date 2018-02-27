@@ -1,8 +1,11 @@
 ---
 title: 将Blog同时托管在Coding和GitHub
-date: 2017-11-08 14:02:17
 categories: 技术
-tags: [hexo,blog]
+tags:
+  - hexo
+  - blog
+abbrlink: 17769
+date: 2017-11-08 14:02:17
 ---
 
 > GitHub毕竟是国外网站，访问速度上略慢，而且GitHub屏蔽了百度爬虫，所以我们再将博客部署到国内的托管平台Coding。

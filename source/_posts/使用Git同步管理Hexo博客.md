@@ -1,8 +1,11 @@
 ---
 title: 使用Git同步管理Hexo博客
-date: 2017-10-19 13:35:21
 categories: 技术
-tags: [hexo,blog]
+tags:
+  - hexo
+  - blog
+abbrlink: 34233
+date: 2017-10-19 13:35:21
 ---
 
 ## 概述

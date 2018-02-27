@@ -1,11 +1,12 @@
 ---
 title: 一、React新的前端思维方式 - Note
 categories: 技术
-date: 2018-02-02 22:10:00
 tags:
   - 笔记
   - React
   - 《深入浅出React和Redux》
+abbrlink: 54733
+date: 2018-02-02 22:10:00
 ---
 
 ### 快速入手

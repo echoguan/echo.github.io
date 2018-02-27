@@ -1,8 +1,10 @@
 ---
 title: Markdown语法简介
 categories: 技术
+tags:
+  - Markdown
+abbrlink: 55950
 date: 2018-01-12 21:19:15
-tags: [Markdown]
 ---
 
 ### 语法

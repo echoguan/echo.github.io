@@ -1,8 +1,11 @@
 ---
 title: Hexo+GitHub基本安装与部署
 categories: 技术
+tags:
+  - hexo
+  - blog
+abbrlink: 30704
 date: 2017-10-18 22:34:31
-tags: [hexo,blog]
 ---
 
 > 使用Hexo+GitHub搭建个人博客（免费+方便）
