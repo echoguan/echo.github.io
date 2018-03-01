@@ -2,7 +2,7 @@
 title: Java设计模式 - 单例模式
 categories: 技术
 date: 2018-03-01 22:26:43
-tags: - 设计模式
+tags: 设计模式
 ---
 
 > Reference
