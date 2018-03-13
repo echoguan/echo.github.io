@@ -2,7 +2,6 @@
 title: Interview
 categories: 技术
 tags: 面试
-abbrlink: 60536
 date: 2018-03-05 15:58:41
 ---
 

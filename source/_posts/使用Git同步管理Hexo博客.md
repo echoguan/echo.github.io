@@ -4,7 +4,6 @@ categories: 技术
 tags:
   - hexo
   - blog
-abbrlink: 34233
 date: 2017-10-19 13:35:21
 ---
 

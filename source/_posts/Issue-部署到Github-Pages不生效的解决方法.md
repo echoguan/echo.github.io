@@ -5,7 +5,6 @@ tags:
   - hexo
   - blog
   - issue
-abbrlink: 24856
 date: 2017-10-19 14:14:06
 ---
 # 部署之后，页面不生效
