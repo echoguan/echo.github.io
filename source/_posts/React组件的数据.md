@@ -26,6 +26,8 @@ tags:
 />
 ```
 
+<!--more-->
+
 - 上面是一个名为 SampleButton 的组件实例，使用了名字分别为`id`、`borderWidth`、`onClick`和`style`的`prop`。
 - 看起来，`prop`很像是 HTML 元素的属性，不过：
   - HTML 元素的属性的值都是字符串类型。
