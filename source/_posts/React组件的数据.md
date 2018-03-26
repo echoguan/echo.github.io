@@ -62,3 +62,44 @@ Counter.propTypes = {
   - 最好的方式是，开发者在代码中定义`propTypes`，在开发时避免错误。
   - 但在发布产品时，用一种自动的方式将`propTypes`去掉，这样部署到产品环境的代码会更优。
   - 现有的`babel-react-optimize`就有这个功能，但应确保只在发布产品代码是使用它。
+
+
+#### React 的state
+- `state` 代表组件的内部状态。
+
+##### 1. 初始化`state`
+- 通常在构造函数结尾处初始化 `state`
+
+```
+constructor (props) {
+  ...
+  this.state = {
+    count: props.initValue || 0
+  }
+}
+```
+
+- 因为`initValue`是一个可选的`props`，要考虑到父组件没有指定其值的情况。如果没有的话就使用默认值`0`。
+  - 不过，让这样的逻辑充斥在构造函数中并不是一件美观的事情，而且容易有遗漏。
+  - 我们可以使用React的`defaultProps`功能，使代码更易懂。
+
+  ```
+  Counter.defaultProps = {
+    initValue: 0
+  }
+  ```
+
+- 组建的`state`必须是一个`JavaScript`对象。
+
+
+##### 2. 读取和更新`state`
+
+```
+onClickIncrementButton () {
+  this.setState({count: this.state.count + 1})
+}
+```
+
+- 值得注意的是，我们改变组件`state`的值必须要使用`this.setState`函数，而不能直接去修改`this.state`。
+  - 因为，直接修改`this.state`的值，虽然事实上改变了组建的内部状态，但只是野蛮的修改了`state`，**却没有驱动组件进行重新渲染**，当然不会在页面上反应出变化。
+  - 而`this.setState`函数所做的事情，首先是改变`this.state`的值
