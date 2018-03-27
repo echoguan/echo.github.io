@@ -75,6 +75,7 @@ Counter.propTypes = {
 ```
 constructor (props) {
   ...
+  
   this.state = {
     count: props.initValue || 0
   }
