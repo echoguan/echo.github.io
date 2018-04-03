@@ -75,7 +75,7 @@ Counter.propTypes = {
 ```
 constructor (props) {
   ...
-  
+
   this.state = {
     count: props.initValue || 0
   }
@@ -105,4 +105,14 @@ onClickIncrementButton () {
 
 - 值得注意的是，我们改变组件`state`的值必须要使用`this.setState`函数，而不能直接去修改`this.state`。
   - 因为，直接修改`this.state`的值，虽然事实上改变了组建的内部状态，但只是野蛮的修改了`state`，**却没有驱动组件进行重新渲染**，当然不会在页面上反应出变化。
-  - 而`this.setState`函数所做的事情，首先是改变`this.state`的值
+  - 而`this.setState`函数所做的事情，首先是改变`this.state`的值，**然后驱动组件经历更新过程，重新渲染**。
+
+
+#### prop和state的对比
+- `prop`用于定义外部接口；`state`用于记录内部状态。
+- `prop`的赋值在外部世界使用组件时；`state`的赋值在组件内部。
+- 组件不应该改变`prop`的值；而`state`存在的目的就是让组件来改变。
+
+
+- 通过`this.setState`函数修改state就是改变了组件的状态。
+- 但是，组件是绝不应该去修改传入的`props`值。
