@@ -26,8 +26,9 @@ tags:
   - `render`
   - `componentDidMount`
 
+<!--more-->
 
-##### 1. **constructor**
+##### 1. constructor
 - `constructor`也就是ES6中每个类的构造函数
 - 但并不是每个组件都需要定义自己的构造函数。无状态的`React组件`往往就不需要定义构造函数。
 - 一个组件需要构造函数，往往是为了以下的目的：
@@ -56,7 +57,7 @@ Sample.defaultProps = {
 
 - `React.createClass`已经被Facebook官方逐渐废弃，不建议使用。
 
-##### 3. **render**
+##### 3. render
 - `render`函数无疑是`React组件`中最重要的函数。
   - 一个组件可以忽略其他所有函数都不实现，但是一定要实现`render函数`。
   - 因为所有React组件的父类`React.Component类`对除`render`之外的生命周期函数都有默认实现。
