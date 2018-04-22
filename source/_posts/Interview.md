@@ -5,6 +5,47 @@ tags: 面试
 date: 2018-03-05 15:58:41
 ---
 
+#### 静态变量和实例变量的区别？
+- 语法定义上：静态变量前要加static关键字，而实例变量前不加。
+- 程序运行上：
+  - 静态变量不属于某个实例对象，属于类，所以也叫类变量。
+  - 只要程序加载了类的字节码，静态变量就会被分配空间，就可以使用。不用创建任何实例变量。
+  - 静态变量直接用类名来引用。
+  - 实例变量属于某个实例对象的属性。
+  - 必须创建了实例对象，其中的实例变量才会被分配空间，才能使用。
+  - 实例变量通过其对象来引用。
+
+```
+public class variantTest {
+  public static int staticVar = 0;
+  public int instanceVar = 0;
+
+  public VariantTest(){
+    staticVar++;
+    instanceVar++;
+  }
+}
+// 上面的程序，无论创建了多少个类的实例对象，永远只分配一个静态变量staticVar。
+// 并且每创建一个实例对象，staticVar都会累积加1。
+// 但是，每创建一个实例对象，就会分配一个instanceVar。
+// 每个instanceVar都只会自加一次。
+```
+
+#### 使用`final`关键字修饰一个变量时，是引用不能变，还是引用的对象不能变？
+- 使用final关键字修饰一个变量时，是指引用不能变。
+- 而引用的变量指向的对象中的内容是可以改变的。
+
+```
+final StringBuffer a = new StringBuffer("immutable");
+a = new StringBuffer(""); //编译会报错！
+a.append("broken!"); //是正确的！
+```
+
+#### Java中有没有`goto`?
+- Java中有`goto`。
+- 但是是Java中的**保留字**，现在**没有**在Java中使用。
+- `保留字`的意思就是不排除以后会启用，变成关键字。
+
 #### Java基本数据类型和引用数据类型
 
 #### [Java 数组声明与初始化](https://echoguan.coding.me/2018/03/27/Java%E6%95%B0%E7%BB%84%E5%A3%B0%E6%98%8E%E4%B8%8E%E5%88%9D%E5%A7%8B%E5%8C%96/)
