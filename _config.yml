@@ -130,4 +130,6 @@ jsonContent:
 
 # 搜索引擎
 sitemap:
-    path: sitemap.xml
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
