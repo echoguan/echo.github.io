@@ -8,7 +8,10 @@ date: 2018-03-05 15:58:41
 ### 记录
 <!--more-->
 
+#### MySQL 的引擎：InnoDB... 区别
+
 #### Integer与int的区别
+
 - `int`是Java提供的8种`原始数据类型`之一。Java为每个原始数据类型提供的`封装类`。`Integer`是`int`的封装类。
 - `int`的默认值为`0`，而`Integer`的默认值是`null`。
 - 即，Integer可以区分出未赋值与值为0的区别；而int无法表达出未赋值的情况。
