@@ -26,6 +26,20 @@ tags:
 
 ![Diagram JavaScript Facade  Design Pattern](https://www.dofactory.com/images/diagrams/javascript/javascript-facade.jpg) 
 
+##### 代码结构
+
+1. `FacadeFactory` - Facade 工厂
+
+   调用`ClassController`和`Confiration`，创建各种需要的 Facade 接口。
+
+2. `ClassController`
+
+   读取 configuration 配置文件，取到相应的 Wrapper。
+
+3. `Configuration` - 配置文件
+
+   
+
 ##### Sample Code
 
 1. `RatedDriverListWrapper`
