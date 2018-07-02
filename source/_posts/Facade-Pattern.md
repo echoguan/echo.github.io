@@ -26,7 +26,7 @@ tags:
 
 ![Diagram JavaScript Facade  Design Pattern](https://www.dofactory.com/images/diagrams/javascript/javascript-facade.jpg) 
 
-##### 代码结构
+##### 1. 代码结构
 
 1. `FacadeFactory` - Facade 工厂
 
@@ -38,7 +38,23 @@ tags:
 
 3. `Configuration` - 配置文件
 
-   
+   定义不同 state 和 wrapper 的对应关系。
+
+4. Common Base Facade，将需要的业务逻辑封装成对应的方法，简化外部调用，降低耦合。
+
+5. 各个 state special Facade，定义特定 state 不同的方法。
+
+
+
+##### 4. 修改代码的注意点
+
+1. 找到代码中需要提出统一接口的部分，分析业务逻辑
+2. 在`FacadeFactory`中添加 **get Facade** 方法
+3. 在`app-constants.js`中添加常量；在`Configuration.js`里添加配置。
+4. 新建对应的 **Facade class**，将需要的业务逻辑封装成对应的方法，简化外部调用，降低耦合。
+5. 增加 **unit test** 
+
+
 
 ##### Sample Code
 
@@ -179,3 +195,5 @@ tags:
 ##### Reference
 
 > [facade-design-pattern](https://www.dofactory.com/javascript/facade-design-pattern)
+>
+> [项目 - 修改代码示例](https://github.com/clublabs/OnlineBind/commit/1ad00b9fe43488f2a650de41e8531937c23c7f90#diff-6916581c9c59808386c89772209c592f)
