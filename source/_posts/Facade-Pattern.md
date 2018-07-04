@@ -1,11 +1,11 @@
 ---
-title: Facade Design Pattern
+title: Facade 外观模式/门面模式
 categories: 技术
 date: 2018-06-29 10:18:08
 tags: 设计模式
 ---
 
-### Facade  外观模式/门面模式
+
 
 ##### 作用
 
