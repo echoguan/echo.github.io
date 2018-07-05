@@ -11,9 +11,7 @@ tags: 工具
 
 #### 效果图
 
-
-
-
+![屏幕快照 2018-07-04 下午8.52.14](/Users/echo/Desktop/屏幕快照 2018-07-04 下午8.52.14.png)
 
 #### 配置
 
@@ -43,5 +41,5 @@ tags: 工具
 
 #### 插件
 
-1. [incr.zsh](https://link.jianshu.com/?t=http://mimosa-pudica.net/zsh-incremental.html) 自动补齐插件
+1. [incr.zsh](https://link.jianshu.com/?t=http://mimosa-pudica.net/zsh-incremental.html) 自动补齐插件 - 不好用，无法粘贴命令
 2. highlight 插件

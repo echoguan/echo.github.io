@@ -13,8 +13,6 @@ tags: MacBook
 4. Typora
 5. iTerm2
    1. 配色：
-   2. 未完成：
-      - Hotkey没设置
 6. VSCode
    1. 插件：ESlint, Pri **
 7. TeamViewer
@@ -23,7 +21,8 @@ tags: MacBook
 10. QQ
 11. WeChat
 12. Utils
-    1. Git 
-    2. Node
-    3. homebrew
-    4. wget
+    1. JDK
+    2. Git 
+    3. Node
+    4. homebrew
+    5. wget
