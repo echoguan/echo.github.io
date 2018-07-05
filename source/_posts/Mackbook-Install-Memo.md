@@ -25,13 +25,10 @@ tags: MacBook
    1. Typora
    2. iTerm2
       1. 配色：
-      2. 未完成：
-         - Hotkey 没设置
    3. VSCode
       1. 插件：ESlint, Prettier, Auto Close Tag, VSCode Great Icons
    4. GitHub Desktop
    5. IntelliJ IDEA
-   6. 
 
    
 
