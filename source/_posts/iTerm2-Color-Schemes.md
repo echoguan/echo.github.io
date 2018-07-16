@@ -15,6 +15,8 @@ tags: 工具
 
 #### 配置
 
+<!--more-->
+
 1. 设置 iTerm2 为**默认终端**：
    - （菜单栏）iTerm2 -> Make iTerm2 Default Term 
 2. 全局热键启动和关闭 iTerm2：

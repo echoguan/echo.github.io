@@ -38,3 +38,4 @@ tags: MacBook
    2. Node
    3. homebrew
    4. wget
+   5. Maven
