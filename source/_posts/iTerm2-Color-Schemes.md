@@ -11,7 +11,7 @@ tags: 工具
 
 #### 效果图
 
-![屏幕快照 2018-07-16 下午10.51.25](/Users/echo/Codes/echoguan.github.io/images/屏幕快照 2018-07-16 下午10.51.25.png)
+![iterm2](https://raw.githubusercontent.com/echoguan/echoguan.github.io/hexo/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-07-16%20%E4%B8%8B%E5%8D%8810.51.25.png)
 
 #### 配置
 
