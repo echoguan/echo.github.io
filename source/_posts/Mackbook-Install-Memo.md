@@ -39,3 +39,5 @@ tags: MacBook
 3. homebrew
 4. wget
 5. Maven
+6. Java
+7. MongoDB
