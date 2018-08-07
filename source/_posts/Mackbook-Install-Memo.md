@@ -17,6 +17,9 @@ tags: MacBook
 6. 百度云
 7. QQ
 8. WeChat
+9. Parallels Desktop
+10. Office
+11. IINA
 
 
 
