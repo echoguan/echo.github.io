@@ -80,7 +80,8 @@ a.append("broken!"); //是正确的！
 - 创建对象默认是单例的，不需要再使用单例模式进行处理。
 
 ##### IOC
-- IOC(Inversion of Controller)，DI(Dependency Injection)依赖注入，IOC控制反转。
+- IOC (Inversion of Controller) 控制反转，别名 DI (Dependency Injection) 依赖注入。
+  - **所谓 IOC ，就是由 Spring IOC 容器来负责对象的生命周期和对象之间的关系（让别人为你服务）。**
   - IOC, 将对象的创建权交由Spring容器，由容器根据配置文件控制实例以及实例间的关系（创建、维护、销毁）。
   - DI, 在Spring容器创建Bean对象时，自动将依赖注入到对应的实例中。
 - 运用了工厂模式。并且是通过反射机制实现的。并且默认是单例模式的。
