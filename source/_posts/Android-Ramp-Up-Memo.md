@@ -1,5 +1,5 @@
 ---
-title: Android Ramp Up Memo
+title: Android Ramp Up 笔记
 categories: 技术
 date: 2018-09-11 10:40:21
 tags:
@@ -51,4 +51,36 @@ tags:
 
 #### Android
 
-- `Activity`
+- 构成应用的组件主要有四种：`Activities`活动、`Services` 服务、`Broadcast Receivers` 广播接收器 和 `Content Providers` 内容提供者。
+
+- `Android Manifest` 用于向 Android 框架**注册组件**。
+
+- `Activity`：Single focused thing that the user can do.(用户可以执行的单一任务)
+
+  - 负责**显示应用用户界面**。
+
+  - `Activity` 通过读取 `XML布局文件` 确定要创建哪些视图（并放在何处）。
+
+  - > [Android 布局入门](https://classroom.udacity.com/courses/ud851/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/cdbfd437-de24-4903-8f01-37c29427cb38#)
+
+- `Layout` 
+
+  - 分为三种：`FrameLayout` 帧布局、 `LinearLayout` 线性布局、 `ConstraintLayout` 约束布局
+
+
+
+
+
+#### 大坑
+
+##### Android Studio `Gradle Sync Failed` 错误 
+
+- 出现错误的原因：**Android Studio 需要设置代理 FQ**
+  - `settings` 搜索 `proxy` 
+
+  - 我是用 ShadowSocks ，设置如下图：
+
+    ![Proxy Setting](../../images/AndroidStudioProxy.png)
+
+  > [【Android】给Android Studio设置代理](https://blog.csdn.net/lchad/article/details/43567675) 
+
