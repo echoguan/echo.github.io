@@ -67,6 +67,9 @@ tags:
 
   - 分为三种：`FrameLayout` 帧布局、 `LinearLayout` 线性布局、 `ConstraintLayout` 约束布局
 
+- Tips: 
+  -  `Android` 特殊的**日志**级别：`WTF(What a Terrible Failure)` > `ERROR` 
+
 
 
 
