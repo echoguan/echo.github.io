@@ -14,9 +14,9 @@ tags:
   - `Presenter` 则提供 `View` 和 `Model` 之间数据的纽带，用于交互和数据传输
 - **`View`不直接与`Model`交互**
 
-> [MVP 设计模式理解，实战理解MVP](https://blog.csdn.net/u011418943/article/details/69840880)
+> [MVP 设计模式理解，实战理解MVP](https://blog.csdn.net/u011418943/article/details/69840880) 
 >
-> [Android MVP 详解（上）](https://www.jianshu.com/p/9a6845b26856)
+> [Android MVP 详解（上）](https://www.jianshu.com/p/9a6845b26856) 
 
 
 
@@ -67,7 +67,10 @@ tags:
 
   - 分为三种：`FrameLayout` 帧布局、 `LinearLayout` 线性布局、 `ConstraintLayout` 约束布局
 
+- `AsyncTask` : 在 Android **线程之间**进行线程和消息**传递**的有用抽象类。
+
 - Tips: 
+
   -  `Android` 特殊的**日志**级别：`WTF(What a Terrible Failure)` > `ERROR` 
 
 
