@@ -72,6 +72,13 @@ tags:
 - Tips: 
 
   -  `Android` 特殊的**日志**级别：`WTF(What a Terrible Failure)` > `ERROR` 
+  -  `Json` : **Java Script Object Notation** 
+
+- 设置
+
+  - proxy
+  - Gradle -> offline work 选上
+  - Compiler -> Configure on demand 不选
 
 
 
