@@ -97,3 +97,16 @@ tags:
 
   > [【Android】给Android Studio设置代理](https://blog.csdn.net/lchad/article/details/43567675) 
 
+
+
+
+
+#### ButterKnife 
+
+- **ButterKnife** 是一个 `Android` 系统的 `View` 注入框架，能够通过『注解』的方式来绑定 `View` 的属性或方法。
+
+- 比如使用它能够减少 `findViewById()` 的书写，使代码更为简洁明了，同时不消耗额外的性能。
+
+  > [[Android] ButterKnife 浅析](https://www.jianshu.com/p/1d80c7dd01ba) 
+  >
+  > [https://www.jianshu.com/p/952c6f5e8157](https://www.jianshu.com/p/952c6f5e8157) 
