@@ -1,5 +1,5 @@
 ---
-title: 'JDK,JRE,JVM简介'
+title: 'JDK, JRE, JVM简介'
 categories: 技术
 date: 2018-09-09 14:01:59
 tags:
@@ -13,7 +13,7 @@ tags:
 - `JDK` 是整个 Java 的**核心**。
 - 包括：
   - **JRE** - Java 运行环境
-  - **Java API** - Java 基础的**类库**
+  - **Java API** - Java 基础的**类库** 
   - 一堆` Java 工具`（javac/java/jdb等）
 
 
