@@ -8,11 +8,20 @@ tags:
 #### MVP Pattern
 
 - Model-View-Presenter
+
 - 是由 `MVC` 演变而来。在 `MVP` 中：
   - `View` 更加专注于处理数据可视化和页面交互
   - `Model` 更加专注于数据的处理
   - `Presenter` 则提供 `View` 和 `Model` 之间数据的纽带，用于交互和数据传输
-- **`View`不直接与`Model`交互**
+
+- **`View`不直接与`Model`交互** 
+
+- #### MVP in four bullet points
+
+  - MVP stands for Model-View-Presenter.
+  - The “Model” is your data source, doesn’t matter if a database, network calls or a hard-coded list of objects.
+  - The “View” is your Activity, Fragment or custom Android View. Which should just take care of displaying things and handling user interaction.
+  - The “Presenter” is a plain old java object (POJO) that handles the communication between the View and the Model, makes any required data transformations, handles errors from the Model and tries to remove as much UX logic from the View as possible.
 
 > [MVP 设计模式理解，实战理解MVP](https://blog.csdn.net/u011418943/article/details/69840880) 
 >
@@ -46,6 +55,8 @@ tags:
 
 
 #### Robolectric
+
+- `gradlew clean build`
 
 
 
