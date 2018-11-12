@@ -1,10 +1,11 @@
 ---
-title: IntelliJ IDEA 配置 备忘录
+title: 备忘 - IntelliJ IDEA 配置 备忘录
 categories: 技术
 date: 2018-07-04 21:02:02
 tags: 
   - 工具
   - JDK
+  - 备忘
 ---
 
 

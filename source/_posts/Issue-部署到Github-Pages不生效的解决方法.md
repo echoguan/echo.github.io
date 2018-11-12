@@ -1,5 +1,5 @@
 ---
-title: 'Issue: 部署到Github Pages不生效的解决方法'
+title: Issue: 部署到Github Pages不生效的解决方法
 categories: 技术
 tags:
   - hexo

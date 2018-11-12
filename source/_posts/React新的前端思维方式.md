@@ -1,5 +1,5 @@
 ---
-title: 一、React新的前端思维方式 - Note
+title: React - 新的前端思维方式 - Note(1)
 categories: 技术
 tags:
   - 笔记
@@ -69,4 +69,5 @@ date: 2018-02-02 22:10:00
 - 理解 React 的工作方式，是踏入 React 世界的关键一步。
 
 > 参考
+>
 > * 程墨 - 《深入浅出React和Redux》

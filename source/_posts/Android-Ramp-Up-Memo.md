@@ -1,9 +1,16 @@
 ---
-title: Android Ramp Up 笔记
+title: Android - Ramp Up 笔记
 categories: 技术
 date: 2018-09-11 10:40:21
-tags:
+tags: Android
 ---
+
+#### Demo 
+
+- **Acceptance Criteria** 
+- MVP, Dagger2, Retrofit, RxJava, Unit test
+
+
 
 #### MVP Pattern
 
@@ -26,6 +33,10 @@ tags:
 > [MVP 设计模式理解，实战理解MVP](https://blog.csdn.net/u011418943/article/details/69840880) 
 >
 > [Android MVP 详解（上）](https://www.jianshu.com/p/9a6845b26856) 
+
+
+
+<!--more-->
 
 
 
@@ -104,7 +115,7 @@ tags:
 
   - 我是用 ShadowSocks ，设置如下图：
 
-    ![Proxy Setting](../../images/AndroidStudioProxy.png)
+    ![Proxy Setting](images/AndroidStudioProxy.png) 
 
   > [【Android】给Android Studio设置代理](https://blog.csdn.net/lchad/article/details/43567675) 
 

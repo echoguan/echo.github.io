@@ -1,5 +1,5 @@
 ---
-title: 将Blog同时托管在Coding和GitHub
+title: Blog - 将Blog同时托管在Coding和GitHub
 categories: 技术
 tags:
   - hexo

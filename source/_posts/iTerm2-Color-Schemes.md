@@ -1,8 +1,8 @@
 ---
-title: iTerm2 配色方案
+title: 备忘 - iTerm2 配色方案
 categories: 技术
 date: 2018-07-04 08:46:01
-tags: 工具
+tags: - 工具 - 备忘
 ---
 
 

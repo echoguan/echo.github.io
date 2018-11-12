@@ -1,5 +1,5 @@
 ---
-title: 'JDK, JRE, JVM简介'
+title: Java - JDK, JRE, JVM简介
 categories: 技术
 date: 2018-09-09 14:01:59
 tags:
@@ -39,4 +39,4 @@ tags:
 
 
 
-![JDK JRE JVM 关系](../../images/JDKJREJVM关系.gif)
+![JDK JRE JVM 关系](/images/JDKJREJVM关系.gif) 

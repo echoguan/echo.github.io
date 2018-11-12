@@ -1,5 +1,5 @@
 ---
-title: Java基本数据类型和引用数据类型
+title: Java - 基本数据类型和引用数据类型
 categories: 技术
 date: 2018-04-04 17:59:31
 tags:

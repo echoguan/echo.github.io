@@ -1,5 +1,5 @@
 ---
-title: Hexo+GitHub基本安装与部署
+title: Blog - Hexo+GitHub基本安装与部署
 categories: 技术
 tags:
   - hexo

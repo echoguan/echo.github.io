@@ -1,5 +1,5 @@
 ---
-title: Git Memo
+title: 备忘 - Git Memo
 categories: 技术
 date: 2018-04-02 11:05:33
 tags: git

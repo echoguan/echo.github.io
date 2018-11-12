@@ -1,5 +1,5 @@
 ---
-title: Java数组声明与初始化
+title: Java - 数组声明与初始化
 categories: 技术
 date: 2018-03-27 14:30:32
 tags:

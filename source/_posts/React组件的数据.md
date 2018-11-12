@@ -1,5 +1,5 @@
 ---
-title: React组件的数据 - Note
+title: React - 组件的数据 - Note(2)
 categories: 技术
 date: 2018-03-19 13:39:40
 tags:
