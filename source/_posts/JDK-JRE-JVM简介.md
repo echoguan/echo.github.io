@@ -39,4 +39,4 @@ tags:
 
 
 
-![JDK JRE JVM 关系](/images/JDKJREJVM关系.gif) 
+![JDK JRE JVM 关系](/images/JDKJREJVM-relation.gif) 

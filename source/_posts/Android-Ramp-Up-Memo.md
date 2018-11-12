@@ -115,7 +115,7 @@ tags: Android
 
   - 我是用 ShadowSocks ，设置如下图：
 
-    ![Proxy Setting](images/AndroidStudioProxy.png) 
+    ![Proxy Setting](/images/AndroidStudioProxy.png) 
 
   > [【Android】给Android Studio设置代理](https://blog.csdn.net/lchad/article/details/43567675) 
 

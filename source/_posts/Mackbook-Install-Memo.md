@@ -2,7 +2,9 @@
 title: 备忘 - Mackbook 新装机
 categories: 技术
 date: 2018-07-04 13:52:19
-tags: - MacBook - 备忘
+tags: 
+  - MacBook 
+  - 备忘
 ---
 
 

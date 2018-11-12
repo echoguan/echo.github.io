@@ -2,7 +2,9 @@
 title: 备忘 - iTerm2 配色方案
 categories: 技术
 date: 2018-07-04 08:46:01
-tags: - 工具 - 备忘
+tags: 
+  - 工具 
+  - 备忘
 ---
 
 
@@ -11,7 +13,7 @@ tags: - 工具 - 备忘
 
 #### 效果图
 
-![iterm2](https://raw.githubusercontent.com/echoguan/echoguan.github.io/hexo/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-07-16%20%E4%B8%8B%E5%8D%8810.51.25.png)
+![iterm2](/images/itrem2-theme-echo.png) 
 
 #### 配置
 
