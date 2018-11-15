@@ -129,5 +129,70 @@ tags: 集合
   | E                 | set(int index, E element)                    | Replaces the element at the specified position in this list with the specified element (optional operation). |
   | List<E>           | subList(int fromIndex, int toIndex)          | Returns a view of the portion of this list between the specified `fromIndex`, inclusive, and `toIndex`, exclusive. |
   | Object[]          | toArray()                                    | Returns an array containing all of the elements in this list in proper sequence (from first to last element). |
+  | default void      | replaceAll(UnaryOperator<E> operator)        | Replaces each element of this list with the result of applying the operator to that element. |
+  | default void      | sort(Comparator<? super E> c)                | Sorts this list according to the order induced by the specified [`Comparator`](https://docs.oracle.com/javase/10/docs/api/java/util/Comparator.html). |
 
+
+
+#### Queue 集合
+
+- `队列 ` 数据结构。队列通常是指**先进先出 FIFI** 的容器。
+- 通常，队列不允许随机访问队列中的元素。
+
+| Modifier and Type | Method     | Desc                                                         |
+| ----------------- | ---------- | ------------------------------------------------------------ |
+| boolean           | add(E e)   | Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions, returning `true` upon success and throwing an `IllegalStateException` if no space is currently available. |
+| E                 | element()  | Retrieves, but does not remove, the head of this queue.      |
+| boolean           | offer(E e) | Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions. |
+| E                 | peek()     | Retrieves, but does not remove, the head of this queue, or returns `null` if this queue is empty. |
+| E                 | poll()     | Retrieves and removes the head of this queue, or returns `null` if this queue is empty. |
+| E                 | remove()   | Retrieves and removes the head of this queue.                |
+
+
+
+#### Map 集合
+
+- `Map` 保存具有映射关系的数据。`key` 和 `value` 都可以是任何引用类型的数据。
+
+- `key` **不允许重复** 。key 和 value 之间存在单向一对一关系。
+
+- `Map` 与 `Set` `List` 的关系
+
+  - 与`Set` 的关系：
+    - 如果把`Map` 里的所有`key` 放在一起看，它们就组成了一个`Set` 集合（`key` 没有顺序，且不可重复）。
+    - 实际上`Map` 有一个 `keySet()` 方法，返回`Map` 里所有`key` 组成的`Set` 集合。
+
+  - 与 `List` 的关系：
+    - 如果把`Map` 里的所有`value` 放在一起看，它们又非常类似于一个 `List` （`value` 可重复，每个元素根据索引来查找）。
+
+- `Map` 接口中定义的方法：
+
+| Modifier and Type    | Method                                  | Desc                                                         |
+| -------------------- | --------------------------------------- | ------------------------------------------------------------ |
+| void                 | clear()                                 | Removes all of the mappings from this map (optional operation). |
+| boolean              | containsKey(Object key)                 | Returns `true` if this map contains a mapping for the specified key. |
+| boolean              | containsValue(Object value)             | Returns `true` if this map maps one or more keys to the specified value. |
+| Set<Map.Entry<K, V>> | entrySet()                              | Returns a [`Set`](https://docs.oracle.com/javase/10/docs/api/java/util/Set.html) view of the mappings contained in this map. |
+| boolean              | equals(Object o)                        | Compares the specified object with this map for equality.    |
+| V                    | get(Object key)                         | Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
+| int                  | hashCode()                              | Returns the hash code value for this map.                    |
+| boolean              | isEmpty()                               | Returns `true` if this map contains no key-value mappings.   |
+| Set<K>               | keySet()                                | Returns a [`Set`](https://docs.oracle.com/javase/10/docs/api/java/util/Set.html) view of the keys contained in this map. |
+| V                    | put(K key, V value)                     | Associates the specified value with the specified key in this map (optional operation). |
+| void                 | putAll(Map<? extends K, ? extends V> m) | Copies all of the mappings from the specified map to this map (optional operation). |
+| V                    | remove(Object key)                      | Removes the mapping for a key from this map if it is present (optional operation). |
+| int                  | size()                                  | Returns the number of key-value mappings in this map.        |
+| Collection<V>        | values()                                | Returns a [`Collection`](https://docs.oracle.com/javase/10/docs/api/java/util/Collection.html) view of the values contained in this map. |
+
+
+
+- `Map` 还包含一个**内部类** `Entry` ，该类封装了一个`key-value` 对。
+
+| Modifier and Type | Method            | Desc                                                         |
+| ----------------- | ----------------- | ------------------------------------------------------------ |
+| boolean           | equals(Object o)  | Compares the specified object with this entry for equality.  |
+| K                 | getKey()          | Returns the key corresponding to this entry.                 |
+| V                 | getValue()        | Returns the value corresponding to this entry.               |
+| int               | hashCode()        | Returns the hash code value for this map entry.              |
+| V                 | setValue(V value) | Replaces the value corresponding to this entry with the specified value (optional operation). |
 
