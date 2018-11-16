@@ -33,6 +33,10 @@ tags: 集合
 
 
 
+<!--more-->
+
+
+
 #### 集合类之间的继承关系 
 
 - ![Collection](/images/Collection.png) 
@@ -118,19 +122,19 @@ tags: 集合
 
 - `List` 可以使用 `Collection` 接口里的所有方法。而且由于 List 为**有序集合** ，**额外增加** 了一些根据索引来操作集合元素的方法。
 
-  | Modifier and Type | Method                                       | Desc                                                         |
-  | ----------------- | -------------------------------------------- | ------------------------------------------------------------ |
-  | void              | add(int index, E element)                    | Inserts the specified element at the specified position in this list (optional operation). |
-  | boolean           | addAll(int index, Collection<? extends E> c) | Inserts all of the elements in the specified collection into this list at the specified position (optional operation). |
-  | E                 | get(int index)                               | Returns the element at the specified position in this list.  |
-  | int               | indexOf(Object o)                            | Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element. |
-  | int               | lastIndexOf(Object o)                        | Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element. |
-  | E                 | remove(int index)                            | Removes the element at the specified position in this list (optional operation). |
-  | E                 | set(int index, E element)                    | Replaces the element at the specified position in this list with the specified element (optional operation). |
-  | List<E>           | subList(int fromIndex, int toIndex)          | Returns a view of the portion of this list between the specified `fromIndex`, inclusive, and `toIndex`, exclusive. |
-  | Object[]          | toArray()                                    | Returns an array containing all of the elements in this list in proper sequence (from first to last element). |
-  | default void      | replaceAll(UnaryOperator<E> operator)        | Replaces each element of this list with the result of applying the operator to that element. |
-  | default void      | sort(Comparator<? super E> c)                | Sorts this list according to the order induced by the specified [`Comparator`](https://docs.oracle.com/javase/10/docs/api/java/util/Comparator.html). |
+| Modifier and Type | Method                                       | Desc                                                         |
+| ----------------- | -------------------------------------------- | ------------------------------------------------------------ |
+| void              | add(int index, E element)                    | Inserts the specified element at the specified position in this list (optional operation). |
+| boolean           | addAll(int index, Collection<? extends E> c) | Inserts all of the elements in the specified collection into this list at the specified position (optional operation). |
+| E                 | get(int index)                               | Returns the element at the specified position in this list.  |
+| int               | indexOf(Object o)                            | Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element. |
+| int               | lastIndexOf(Object o)                        | Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element. |
+| E                 | remove(int index)                            | Removes the element at the specified position in this list (optional operation). |
+| E                 | set(int index, E element)                    | Replaces the element at the specified position in this list with the specified element (optional operation). |
+| List<E>           | subList(int fromIndex, int toIndex)          | Returns a view of the portion of this list between the specified `fromIndex`, inclusive, and `toIndex`, exclusive. |
+| Object[]          | toArray()                                    | Returns an array containing all of the elements in this list in proper sequence (from first to last element). |
+| default void      | replaceAll(UnaryOperator<E> operator)        | Replaces each element of this list with the result of applying the operator to that element. |
+| default void      | sort(Comparator<? super E> c)                | Sorts this list according to the order induced by the specified [`Comparator`](https://docs.oracle.com/javase/10/docs/api/java/util/Comparator.html). |
 
 
 
