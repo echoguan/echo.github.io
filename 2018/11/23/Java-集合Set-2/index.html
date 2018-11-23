@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://echoguan.coding.me">
-  <title>Tag: 前端 | echo</title>
+  <title>Java - 集合Set(2) - Note | echo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="人太容易在实际中走失，驻足于路上的奇观美景，而忘了原本是要去哪儿。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="echo">
-<meta property="og:url" content="http://echoguan.coding.me/tags/前端/index.html">
+  <meta name="description" content="Set  不允许包含重复元素 。  HashSet 类 HashSet 简介 HashSet 是Set接口 的典型实现。 实现了Set接口 中的所有方法，并没有添加额外的方法。 HashSet 按 Hash 算法 来存储集合中的元素，因此具有很好的存取和查找性能 。     特点 不能保证元素的排列顺序 。顺序可能与添加的顺序不同，顺序也可能发生变化。 HashSet 不是同步的 。 集合元">
+<meta name="keywords" content="集合">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java - 集合Set(2) - Note">
+<meta property="og:url" content="http://echoguan.coding.me/2018/11/23/Java-集合Set-2/index.html">
 <meta property="og:site_name" content="echo">
-<meta property="og:description" content="人太容易在实际中走失，驻足于路上的奇观美景，而忘了原本是要去哪儿。">
+<meta property="og:description" content="Set  不允许包含重复元素 。  HashSet 类 HashSet 简介 HashSet 是Set接口 的典型实现。 实现了Set接口 中的所有方法，并没有添加额外的方法。 HashSet 按 Hash 算法 来存储集合中的元素，因此具有很好的存取和查找性能 。     特点 不能保证元素的排列顺序 。顺序可能与添加的顺序不同，顺序也可能发生变化。 HashSet 不是同步的 。 集合元">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-23T07:07:38.054Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="echo">
-<meta name="twitter:description" content="人太容易在实际中走失，驻足于路上的奇观美景，而忘了原本是要去哪儿。">
+<meta name="twitter:title" content="Java - 集合Set(2) - Note">
+<meta name="twitter:description" content="Set  不允许包含重复元素 。  HashSet 类 HashSet 简介 HashSet 是Set接口 的典型实现。 实现了Set接口 中的所有方法，并没有添加额外的方法。 HashSet 按 Hash 算法 来存储集合中的元素，因此具有很好的存取和查找性能 。     特点 不能保证元素的排列顺序 。顺序可能与添加的顺序不同，顺序也可能发生变化。 HashSet 不是同步的 。 集合元">
   
     <link rel="alternative" href="/atom.xml" title="echo" type="application/atom+xml">
   
@@ -147,56 +149,108 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Java-集合Set-2" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/14/前端Interview/" class="archive-article-date">
-  	<time datetime="2018-03-14T14:34:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-14</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/14/前端Interview/">Interview - 前端面试题汇总</a>
+    <h1 class="article-title" itemprop="name">
+      Java - 集合Set(2) - Note
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/11/23/Java-集合Set-2/" class="archive-article-date">
+  	<time datetime="2018-11-23T06:10:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-23</time>
+</a>
+        
+        
+          <span class="archive-article-date">
+            阅读量 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+</blockquote>
+<blockquote>
+<p><code>Set</code>  <strong>不允许包含重复元素</strong> 。</p>
+</blockquote>
+<h3 id="HashSet-类"><a href="#HashSet-类" class="headerlink" title="HashSet 类"></a>HashSet 类</h3><ul>
+<li><code>HashSet</code> 简介<ul>
+<li><code>HashSet</code> 是<code>Set接口</code> 的典型实现。</li>
+<li>实现了<code>Set接口</code> 中的所有方法，并没有添加额外的方法。</li>
+<li><code>HashSet</code> 按 <code>Hash 算法</code> 来存储集合中的元素，因此<strong>具有很好的存取和查找性能</strong> 。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>特点<ul>
+<li><strong>不能保证元素的排列顺序</strong> 。顺序可能与添加的顺序不同，顺序也可能发生变化。</li>
+<li><strong>HashSet 不是同步的</strong> 。</li>
+<li>集合元素可以是 <code>null</code> 。</li>
+<li>判断两个元素是否相等的标准是：<ol>
+<li>两个对象通过<code>equals()</code> 方法比较相等。</li>
+<li>并且，两个对象的<code>hashCode()</code> 方法的返回值也相等。</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝咖啡☕️~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.JPG">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wechat.JPG">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面试</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">集合</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -209,17 +263,167 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://echoguan.coding.me/2018/11/23/Java-集合Set-2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2018/11/23/Java-equals和hashCode方法/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Java - equals() 和 hashCode() 方法
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2018/11/13/Java-集合介绍-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java - 集合介绍(1) - Note</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#HashSet-类"><span class="toc-number">1.</span> <span class="toc-text">HashSet 类</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+
+
+  
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment" class="comment"></div>
+<script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+   new Valine({
+            av: AV,
+            el: '#vcomment',
+            notify: notify,
+            verify: verify,
+            app_id: "uznXJC9K1HIPI00sxQSWCXyl-gzGzoHsz",
+            app_key: "d5HTyJh5fRAmTbUVfvvJjSnq",
+            placeholder: "Just go go",
+            avatar: "robohash",
+            avatar_cdn: "",
+            pageSize: ""
+    });
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+           if ($(window.location.hash).length) {
+              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+              clearInterval(checkExist);
+           }
+        }, 100);
+    }
+</script>
+
+    </section>
+  
+  
+
 
 
           </div>
@@ -265,9 +469,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,

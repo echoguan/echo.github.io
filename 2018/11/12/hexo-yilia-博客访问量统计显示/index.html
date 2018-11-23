@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="echo">
 <meta property="og:description" content="1. 网站访问量显示 效果  见博客底部   实现  使用 不蒜子 ，可以看官方介绍。  在 themes/yilia/layout/_partial/footer.ejs 中加入如下代码：  123456789101112&amp;lt;!-- 根据个人喜好在相应位置添加以下代码 --&amp;gt;&amp;lt;div calss=&quot;count-span&quot;&amp;gt;    &amp;lt;span id=&quot;busuanzi_">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-22T09:33:58.241Z">
+<meta property="og:updated_time" content="2018-11-22T10:25:11.251Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Blog - hexo + yilia 博客访问量统计显示">
 <meta name="twitter:description" content="1. 网站访问量显示 效果  见博客底部   实现  使用 不蒜子 ，可以看官方介绍。  在 themes/yilia/layout/_partial/footer.ejs 中加入如下代码：  123456789101112&amp;lt;!-- 根据个人喜好在相应位置添加以下代码 --&amp;gt;&amp;lt;div calss=&quot;count-span&quot;&amp;gt;    &amp;lt;span id=&quot;busuanzi_">
@@ -186,7 +186,7 @@
 </li>
 <li><p>在 <code>themes/yilia/layout/_partial/footer.ejs</code> 中加入如下代码：</p>
 </li>
-<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 根据个人喜好在相应位置添加以下代码 --&gt;</div><div class="line">&lt;div calss=<span class="string">"count-span"</span>&gt;</div><div class="line">    &lt;span id=<span class="string">"busuanzi_container_site_pv"</span>&gt;</div><div class="line">    总访问量: &lt;span id="busuanzi_value_site_pv"&gt;&lt;/span&gt;|</div><div class="line">    &lt;<span class="regexp">/span&gt;</span></div><div class="line"><span class="regexp">    &lt;span id="busuanzi_container_site_uv"&gt;</span></div><div class="line"><span class="regexp">    总访客: &lt;span id="busuanzi_value_site_uv"&gt;&lt;/</span>span&gt;</div><div class="line">    &lt;<span class="regexp">/span&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>div&gt;</div><div class="line">&lt;!-- 根据个人喜好在相应位置添加以上代码 --&gt;</div><div class="line"></div><div class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 根据个人喜好在相应位置添加以下代码 --&gt;</div><div class="line">&lt;div calss=<span class="string">"count-span"</span>&gt;</div><div class="line">    &lt;span id=<span class="string">"busuanzi_container_site_pv"</span>&gt;</div><div class="line">    总访问量: <span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_pv"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span>|</div><div class="line">    &lt;<span class="regexp">/span&gt;</span></div><div class="line"><span class="regexp">    &lt;span id="busuanzi_container_site_uv"&gt;</span></div><div class="line"><span class="regexp">    总访客: &lt;span id="busuanzi_value_site_uv"&gt;&lt;/</span>span&gt;</div><div class="line">    &lt;<span class="regexp">/span&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>div&gt;</div><div class="line">&lt;!-- 根据个人喜好在相应位置添加以上代码 --&gt;</div><div class="line"></div><div class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure>
 </li>
 <li><p>然后重新部署发布博客即可。</p>
 </li>
@@ -342,7 +342,7 @@
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Java - 集合介绍(1)
+          Java - 集合介绍(1) - Note
         
       </div>
     </a>
@@ -396,6 +396,47 @@
   
 
   
+
+
+  
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment" class="comment"></div>
+<script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+   new Valine({
+            av: AV,
+            el: '#vcomment',
+            notify: notify,
+            verify: verify,
+            app_id: "uznXJC9K1HIPI00sxQSWCXyl-gzGzoHsz",
+            app_key: "d5HTyJh5fRAmTbUVfvvJjSnq",
+            placeholder: "Just go go",
+            avatar: "robohash",
+            avatar_cdn: "",
+            pageSize: ""
+    });
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+           if ($(window.location.hash).length) {
+              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+              clearInterval(checkExist);
+           }
+        }, 100);
+    }
+</script>
+
+    </section>
+  
+  
+
 
 
           </div>
@@ -511,23 +552,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -543,7 +572,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">issue</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -555,7 +588,23 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">issue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">枚举类型</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">集合</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -624,10 +673,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">集合</a>
               </li>
              
               <li class="article-tag-list-item">

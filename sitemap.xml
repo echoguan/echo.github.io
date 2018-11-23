@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://echoguan.coding.me/2018/11/23/Java-equals%E5%92%8ChashCode%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2018-11-23T10:54:02.816Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://echoguan.coding.me/2018/11/23/Java-%E9%9B%86%E5%90%88Set-2/</loc>
+    
+    <lastmod>2018-11-23T07:07:38.054Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://echoguan.coding.me/2018/11/13/Java-%E9%9B%86%E5%90%88%E4%BB%8B%E7%BB%8D-1/</loc>
+    
+    <lastmod>2018-11-23T05:37:15.350Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://echoguan.coding.me/2018/11/12/hexo-yilia-%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%87%8F%E7%BB%9F%E8%AE%A1%E6%98%BE%E7%A4%BA/</loc>
     
-    <lastmod>2018-11-22T09:33:58.241Z</lastmod>
+    <lastmod>2018-11-22T10:25:11.251Z</lastmod>
     
   </url>
   
@@ -159,13 +180,6 @@
     <loc>http://echoguan.coding.me/2018/04/04/Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
     
     <lastmod>2018-11-22T02:58:38.289Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://echoguan.coding.me/2018/11/13/Java-%E9%9B%86%E5%90%88%E4%BB%8B%E7%BB%8D-1/</loc>
-    
-    <lastmod>2018-11-22T02:58:38.287Z</lastmod>
     
   </url>
   

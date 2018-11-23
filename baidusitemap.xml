@@ -4,8 +4,68 @@
 
     
   <url>
+    <loc>http://echoguan.coding.me/2018/11/23/Java-equals%E5%92%8ChashCode%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2018-11-23T10:54:02.816Z</lastmod>
+    <data>
+        <display>
+        <title>Java - equals() 和 hashCode() 方法</title>
+        <pubTime>2018-11-23T06:53:22.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://echoguan.coding.me/2018/11/23/Java-%E9%9B%86%E5%90%88Set-2/</loc>
+    <lastmod>2018-11-23T07:07:38.054Z</lastmod>
+    <data>
+        <display>
+        <title>Java - 集合Set(2) - Note</title>
+        <pubTime>2018-11-23T06:10:04.000Z</pubTime>
+        
+        <tag>集合</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://echoguan.coding.me/2018/11/13/Java-%E9%9B%86%E5%90%88%E4%BB%8B%E7%BB%8D-1/</loc>
+    <lastmod>2018-11-23T05:37:15.350Z</lastmod>
+    <data>
+        <display>
+        <title>Java - 集合介绍(1) - Note</title>
+        <pubTime>2018-11-13T06:59:05.000Z</pubTime>
+        
+        <tag>集合</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://echoguan.coding.me/2018/11/12/hexo-yilia-%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%87%8F%E7%BB%9F%E8%AE%A1%E6%98%BE%E7%A4%BA/</loc>
-    <lastmod>2018-11-22T09:33:58.241Z</lastmod>
+    <lastmod>2018-11-22T10:25:11.251Z</lastmod>
     <data>
         <display>
         <title>Blog - hexo + yilia 博客访问量统计显示</title>
@@ -394,26 +454,6 @@
         <title>Java - 基本数据类型和引用数据类型</title>
         <pubTime>2018-04-04T09:59:31.000Z</pubTime>
         
-         
-           
-             
-              <breadCrumb title="技术" url="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://echoguan.coding.me/2018/11/13/Java-%E9%9B%86%E5%90%88%E4%BB%8B%E7%BB%8D-1/</loc>
-    <lastmod>2018-11-22T02:58:38.287Z</lastmod>
-    <data>
-        <display>
-        <title>Java - 集合介绍(1)</title>
-        <pubTime>2018-11-13T06:59:05.000Z</pubTime>
-        
-        <tag>集合</tag>
-         
          
            
              

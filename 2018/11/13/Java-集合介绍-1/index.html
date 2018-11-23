@@ -6,21 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://echoguan.coding.me">
-  <title>Java - 集合介绍(1) | echo</title>
+  <title>Java - 集合介绍(1) - Note | echo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Ruheng - 由浅入深理解java集合(一)——集合框架 Collection、Map   集合简介 Java 集合 大致可分为Set , List , Queue , Map 四大体系。 Set 代表 无序、不可重复 的集合。 List 代表 有序、可重复 的集合。 Map 代表具有 映射关系 的集合。 Queue 代表 队列 集合。  Java 集合和数组的区别 长度   数组 的长度在">
 <meta name="keywords" content="集合">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java - 集合介绍(1)">
+<meta property="og:title" content="Java - 集合介绍(1) - Note">
 <meta property="og:url" content="http://echoguan.coding.me/2018/11/13/Java-集合介绍-1/index.html">
 <meta property="og:site_name" content="echo">
 <meta property="og:description" content="Ruheng - 由浅入深理解java集合(一)——集合框架 Collection、Map   集合简介 Java 集合 大致可分为Set , List , Queue , Map 四大体系。 Set 代表 无序、不可重复 的集合。 List 代表 有序、可重复 的集合。 Map 代表具有 映射关系 的集合。 Queue 代表 队列 集合。  Java 集合和数组的区别 长度   数组 的长度在">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://echoguan.coding.me/images/Collection.png">
 <meta property="og:image" content="http://echoguan.coding.me/images/Map.png">
-<meta property="og:updated_time" content="2018-11-22T02:58:38.287Z">
+<meta property="og:updated_time" content="2018-11-23T05:37:15.350Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java - 集合介绍(1)">
+<meta name="twitter:title" content="Java - 集合介绍(1) - Note">
 <meta name="twitter:description" content="Ruheng - 由浅入深理解java集合(一)——集合框架 Collection、Map   集合简介 Java 集合 大致可分为Set , List , Queue , Map 四大体系。 Set 代表 无序、不可重复 的集合。 List 代表 有序、可重复 的集合。 Map 代表具有 映射关系 的集合。 Queue 代表 队列 集合。  Java 集合和数组的区别 长度   数组 的长度在">
 <meta name="twitter:image" content="http://echoguan.coding.me/images/Collection.png">
   
@@ -159,7 +159,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Java - 集合介绍(1)
+      Java - 集合介绍(1) - Note
     </h1>
   
 
@@ -318,11 +318,6 @@
 </tr>
 </tbody>
 </table>
-<ul>
-<li><p>Tips: <code>iterator()</code> 方法，当时用<code>Iterator</code> 对集合元素进行迭代时，Iterator 并不是把集合元素本身传递给了迭代变量，<strong>而是把集合元素的值传给了迭代变量</strong> 。所以修改迭代变量的值对集合元素本身没有任何影响。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">IteratorValue</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">        List&lt;String&gt; list =Arrays.asList(<span class="string">"aaa"</span>,<span class="string">"bbb"</span>,<span class="string">"ccc"</span>);</div><div class="line">        Iterator&lt;String&gt; iterator = list.iterator();</div><div class="line">        <span class="keyword">while</span>(iterator.hasNext())&#123;</div><div class="line">            String next = iterator.next();<span class="comment">//集合元素的值传给了迭代变量，仅仅传递了对象引用。保存的仅仅是指向对象内存空间的地址</span></div><div class="line">            next =<span class="string">"修改后的"</span>;</div><div class="line">            System.out.println(next);</div><div class="line">            </div><div class="line">        &#125;</div><div class="line">        System.out.println(list);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 输出结果如下：</span></div><div class="line"><span class="comment">// 修改后的</span></div><div class="line"><span class="comment">// 修改后的</span></div><div class="line"><span class="comment">// 修改后的</span></div><div class="line"><span class="comment">// [aaa, bbb, ccc]</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
 <h4 id="Set-集合"><a href="#Set-集合" class="headerlink" title="Set 集合"></a>Set 集合</h4><ul>
 <li><code>Set 集合</code> 与 <code>Collection 集合</code> 基本相同，没有提供额外的方法。</li>
 <li>只是<code>Set</code> 行为略有不同，<strong>不允许包含重复元素</strong> 。</li>
@@ -719,6 +714,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2018/11/23/Java-集合Set-2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Java - 集合Set(2) - Note
+        
+      </div>
+    </a>
+  
   
     <a href="/2018/11/12/hexo-yilia-博客访问量统计显示/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Blog - hexo + yilia 博客访问量统计显示</div>
@@ -768,6 +772,47 @@
   
 
   
+
+
+  
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment" class="comment"></div>
+<script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+   new Valine({
+            av: AV,
+            el: '#vcomment',
+            notify: notify,
+            verify: verify,
+            app_id: "uznXJC9K1HIPI00sxQSWCXyl-gzGzoHsz",
+            app_key: "d5HTyJh5fRAmTbUVfvvJjSnq",
+            placeholder: "Just go go",
+            avatar: "robohash",
+            avatar_cdn: "",
+            pageSize: ""
+    });
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+           if ($(window.location.hash).length) {
+              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+              clearInterval(checkExist);
+           }
+        }, 100);
+    }
+</script>
+
+    </section>
+  
+  
+
 
 
           </div>
@@ -883,23 +928,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -915,7 +948,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">issue</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -927,7 +964,23 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">issue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">枚举类型</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">集合</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -996,10 +1049,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">集合</a>
               </li>
              
               <li class="article-tag-list-item">
