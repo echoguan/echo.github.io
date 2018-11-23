@@ -1,5 +1,5 @@
 ---
-title: Java - 集合介绍(1)
+title: Java - 集合介绍(1) - Note
 categories: 技术
 date: 2018-11-13 14:59:05
 tags: 集合
@@ -74,31 +74,6 @@ tags: 集合
 | <T> T[]                | toArray(T[] a)                        | Returns an array containing all of the elements in this collection; the runtime type of the returned array is that of the specified array. |
 
 
-
-- Tips: `iterator()` 方法，当时用`Iterator` 对集合元素进行迭代时，Iterator 并不是把集合元素本身传递给了迭代变量，**而是把集合元素的值传给了迭代变量** 。所以修改迭代变量的值对集合元素本身没有任何影响。
-
-  ```java
-  public class IteratorValue {
-      public static void main(String[] args){
-          List<String> list =Arrays.asList("aaa","bbb","ccc");
-          Iterator<String> iterator = list.iterator();
-          while(iterator.hasNext()){
-              String next = iterator.next();//集合元素的值传给了迭代变量，仅仅传递了对象引用。保存的仅仅是指向对象内存空间的地址
-              next ="修改后的";
-              System.out.println(next);
-              
-          }
-          System.out.println(list);
-      }
-  
-  }
-  
-  // 输出结果如下：
-  // 修改后的
-  // 修改后的
-  // 修改后的
-  // [aaa, bbb, ccc]
-  ```
 
 
 
