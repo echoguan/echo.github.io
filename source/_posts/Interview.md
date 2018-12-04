@@ -8,6 +8,13 @@ date: 2018-03-05 15:58:41
 ### 记录
 <!--more-->
 
+#### static 关键字：
+
+- [关键字 static](http://wiki.jikexueyuan.com/project/java-enhancement/java-seven.html) 
+
+- [Java中的static关键字解析](https://www.cnblogs.com/dolphin0520/p/3799052.html) 
+
+
 #### MySQL 的引擎：InnoDB... 区别
 
 #### Integer与int的区别

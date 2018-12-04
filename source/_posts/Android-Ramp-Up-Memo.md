@@ -5,6 +5,29 @@ date: 2018-09-11 10:40:21
 tags: Android
 ---
 
+
+
+#### 遇到的一些问题
+
+##### 1. setError & setErrorEnabled
+
+- 正确使用顺序应该是
+
+  ```java
+  @BindView(R.id.til_username_body)
+  TextInputLayout tilUsername;
+  
+  // add error
+  tilUsername.setError("error here!!"); // setError 会自动调用 setErrorEnabled(true)
+      
+  // romeve error
+  tilUsername.setError(null);
+  tilUsername.setErrorEnabled(false);
+  ```
+
+
+
+
 #### Demo 
 
 - **Acceptance Criteria** 
