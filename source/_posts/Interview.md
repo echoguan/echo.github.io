@@ -8,11 +8,21 @@ date: 2018-03-05 15:58:41
 ### 记录
 <!--more-->
 
+
+
+#### 泛型
+
+- [Java泛型详解](https://www.jianshu.com/p/463e0e4cbc89) 
+- [Java 泛型 - 菜鸟教程](http://www.runoob.com/java/java-generics.html) 
+
+
+
 #### static 关键字：
 
 - [关键字 static](http://wiki.jikexueyuan.com/project/java-enhancement/java-seven.html) 
 
 - [Java中的static关键字解析](https://www.cnblogs.com/dolphin0520/p/3799052.html) 
+
 
 
 #### MySQL 的引擎：InnoDB... 区别
