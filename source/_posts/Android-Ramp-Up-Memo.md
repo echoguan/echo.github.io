@@ -155,3 +155,9 @@ tags: Android
   > [[Android] ButterKnife 浅析](https://www.jianshu.com/p/1d80c7dd01ba) 
   >
   > [https://www.jianshu.com/p/952c6f5e8157](https://www.jianshu.com/p/952c6f5e8157) 
+
+
+
+##### Activity 生命周期
+
+- onCreate() - onStart() - onResume() - onPause() - onStop() - onRestart() - onDestory() 
