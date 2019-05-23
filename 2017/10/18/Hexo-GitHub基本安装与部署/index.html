@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://echoguan.coding.me">
   <title>Blog - Hexo+GitHub基本安装与部署 | echo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="echo">
 <meta property="og:description" content="使用Hexo+GitHub搭建个人博客（免费+方便）  一、安装Hexo安装前提 Node.js Git  QuickStart">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-22T02:58:38.272Z">
+<meta property="og:updated_time" content="2019-05-20T11:03:00.504Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Blog - Hexo+GitHub基本安装与部署">
 <meta name="twitter:description" content="使用Hexo+GitHub搭建个人博客（免费+方便）  一、安装Hexo安装前提 Node.js Git  QuickStart">
@@ -38,7 +38,7 @@
   
 
 </head>
-
+</html>
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -47,11 +47,11 @@
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="" class="profilepic">
+		<a href class="profilepic">
 			<img src="/assets/img/echo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="">Echo</a></h1>
+		  <h1 class="header-author"><a href>Echo</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">十年大计，日拱一卒</p>
@@ -182,13 +182,15 @@
 <li>Git</li>
 </ol>
 <h4 id="QuickStart"><a href="#QuickStart" class="headerlink" title="QuickStart"></a>QuickStart</h4><a id="more"></a>
+
 <ul>
 <li>使用<code>npm</code>安装Hexo: <code>npm install -g hexo</code></li>
 <li>安装完成后，在你想要放置个人博客文件的目录下（例如<code>E:\Hexo</code>），执行<code>hexo init</code></li>
 <li>安装依赖包：在<code>E:\Hexo</code>下，执行命令<code>npm install</code>。这样Hexo博客就搭好了。</li>
 <li>接下来在本地预览一下博客吧。在博客目录（<code>E:\Hexo</code>）下执行</li>
 </ul>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo g</span></div><div class="line"><span class="attribute">hexo s</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>然后就可以访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> ，在本地看到你的博客了，当然别人是看不到的，所以接下来需要部署到GitHub上。</li>
 </ul>
@@ -196,12 +198,12 @@
 hexo s/server    #启动服务器，可本地预览
 hexo d/deploy    #将本地文件发布到服务器上(github/Coding)
 hexo n/new    #新建文章
-hexo h/help    #查看帮助
-</code></pre><h2 id="二、创建对应GitHub-Pages仓库"><a href="#二、创建对应GitHub-Pages仓库" class="headerlink" title="二、创建对应GitHub Pages仓库"></a>二、创建对应GitHub Pages仓库</h2><ul>
+hexo h/help    #查看帮助</code></pre><h2 id="二、创建对应GitHub-Pages仓库"><a href="#二、创建对应GitHub-Pages仓库" class="headerlink" title="二、创建对应GitHub Pages仓库"></a>二、创建对应GitHub Pages仓库</h2><ul>
 <li>在GitHub上创建一个新的仓库，用于存放Hexo博客，命名必须为<strong>username.github.io</strong>（username是你GitHub账号名)</li>
 <li>编辑<code>E:\Hexo</code>下的<code>_config.yml</code>文件，添加或修改如下配置</li>
 </ul>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># Deployment</span></div><div class="line"><span class="meta">## Docs: https:<span class="comment">//hexo.io/docs/deployment.html</span></span></div><div class="line"><span class="symbol">deploy:</span></div><div class="line"><span class="symbol">  type:</span> git</div><div class="line"><span class="symbol">  repo:</span> Repository的SSH地址（可从GitHub相应Repository复制。eg:https:<span class="comment">//github.com/echoguan/echoguan.github.io.git,master）</span></div><div class="line"><span class="symbol">  branch:</span> master</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: Repository的SSH地址（可从GitHub相应Repository复制。eg:https://github.com/echoguan/echoguan.github.io.git,master）</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>Tips:</p>
 <ul>
@@ -212,22 +214,26 @@ hexo h/help    #查看帮助
 <ul>
 <li>安装hexo-deployer-git这个模块</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>执行以下命令完成部署</li>
 </ul>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo g</span></div><div class="line"><span class="attribute">hexo d</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>之后访问username.github.io，就可以看到你的博客啦</li>
 </ul>
 <h2 id="Hexo简单写作"><a href="#Hexo简单写作" class="headerlink" title="Hexo简单写作"></a>Hexo简单写作</h2><h3 id="发表一篇文章"><a href="#发表一篇文章" class="headerlink" title="发表一篇文章"></a>发表一篇文章</h3><ul>
 <li>执行下列命令生成新文章</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> hexo new <span class="string">"新文章"</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;新文章&quot;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>关于草稿</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> hexo new draft <span class="string">"新草稿"</span>	<span class="comment">#生成一篇新草稿，默认不会发布</span></span></div><div class="line"><span class="meta">$</span><span class="bash"> hexo publish <span class="string">"草稿名"</span>	<span class="comment">#发布草稿</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new draft &quot;新草稿&quot;	#生成一篇新草稿，默认不会发布</span><br><span class="line">$ hexo publish &quot;草稿名&quot;	#发布草稿</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>参考</p>
 <ul>
@@ -397,7 +403,7 @@ hexo h/help    #查看帮助
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、安装Hexo"><span class="toc-number">1.</span> <span class="toc-text">一、安装Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装前提"><span class="toc-number">1.0.1.</span> <span class="toc-text">安装前提</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#QuickStart"><span class="toc-number">1.0.2.</span> <span class="toc-text">QuickStart</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hexo常见命令"><span class="toc-number">1.0.3.</span> <span class="toc-text">Hexo常见命令</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、创建对应GitHub-Pages仓库"><span class="toc-number">2.</span> <span class="toc-text">二、创建对应GitHub Pages仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo简单写作"><span class="toc-number">3.</span> <span class="toc-text">Hexo简单写作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#发表一篇文章"><span class="toc-number">3.1.</span> <span class="toc-text">发表一篇文章</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、安装Hexo"><span class="toc-number">1.</span> <span class="toc-text">一、安装Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装前提"><span class="toc-number">1.0.1.</span> <span class="toc-text">安装前提</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#QuickStart"><span class="toc-number">1.0.2.</span> <span class="toc-text">QuickStart</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hexo常见命令"><span class="toc-number">1.0.3.</span> <span class="toc-text">Hexo常见命令</span></a></li></ol></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#二、创建对应GitHub-Pages仓库"><span class="toc-number">2.</span> <span class="toc-text">二、创建对应GitHub Pages仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo简单写作"><span class="toc-number">3.</span> <span class="toc-text">Hexo简单写作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#发表一篇文章"><span class="toc-number">3.1.</span> <span class="toc-text">发表一篇文章</span></a></li></ol></li>
                     </div>
                 </span>
             </div>
@@ -428,7 +434,7 @@ hexo h/help    #查看帮助
       <div id="vcomment" class="comment"></div>
 <script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
-<script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+<script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
 <script>
    var notify = 'false' == true ? true : false;
    var verify = 'false' == true ? true : false;
@@ -468,7 +474,7 @@ hexo h/help    #查看帮助
 		<div id="footer-info">
 			<div class="footer-left">
 				&copy;
-				2018
+				2019
 					Echo
 			</div>
 			<div class="footer-right">
@@ -573,11 +579,43 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">快捷键</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">排序</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">冒泡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+                <a href="javascript:void(0)" class="js-tag color1">issue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -593,27 +631,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">JRE</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">JVM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">issue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -637,11 +659,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MacBook</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+                <a href="javascript:void(0)" class="js-tag color3">MacBook</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -673,6 +695,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">时间复杂度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">空间复杂度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">并发</a>
               </li>
              
@@ -685,6 +715,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">抽象类</a>
               </li>
              
@@ -693,11 +727,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
+                <a href="javascript:void(0)" class="js-tag color3">思考</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">思考</a>
+                <a href="javascript:void(0)" class="js-tag color5">空间复杂度，稳定性</a>
               </li>
             
             <div class="clearfix"></div>
@@ -705,7 +739,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:

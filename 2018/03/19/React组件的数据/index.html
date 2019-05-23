@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://echoguan.coding.me">
   <title>React - 组件的数据 - Note(2) | echo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="echo">
 <meta property="og:description" content="React组件 的数据分为两种，prop 和state。 无论prop或者state的改变，都可能引发组件的 重新渲染。 prop 是组件的对外接口，state 是组件的内部状态。  React 的prop prop( property 的简写) 是从外部传递给组件的数据。 一个React 组件通过定义自己能够接受的prop就定义了自己得对外公共接口。 外部世界就是通过prop来和组件对话的。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-22T02:58:38.301Z">
+<meta property="og:updated_time" content="2019-05-20T11:03:00.538Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React - 组件的数据 - Note(2)">
 <meta name="twitter:description" content="React组件 的数据分为两种，prop 和state。 无论prop或者state的改变，都可能引发组件的 重新渲染。 prop 是组件的对外接口，state 是组件的内部状态。  React 的prop prop( property 的简写) 是从外部传递给组件的数据。 一个React 组件通过定义自己能够接受的prop就定义了自己得对外公共接口。 外部世界就是通过prop来和组件对话的。">
@@ -38,7 +38,7 @@
   
 
 </head>
-
+</html>
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -47,11 +47,11 @@
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="" class="profilepic">
+		<a href class="profilepic">
 			<img src="/assets/img/echo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="">Echo</a></h1>
+		  <h1 class="header-author"><a href>Echo</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">十年大计，日拱一卒</p>
@@ -184,8 +184,10 @@
 <li>一个React 组件通过定义自己能够接受的<code>prop</code>就定义了自己得对外公共接口。</li>
 <li>外部世界就是通过<code>prop</code>来和组件对话的。</li>
 </ul>
-<h5 id="1-给-prop-赋值"><a href="#1-给-prop-赋值" class="headerlink" title="1.给 prop 赋值"></a>1.给 prop 赋值</h5><figure class="highlight htmlbars"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">SampleButton</span></span></span></div><div class="line"><span class="xml">  id="sample" borderWidth=&#123;2&#125; onClick=&#123;onButtonClick&#125;</span></div><div class="line"><span class="xml">  style=</span><span class="template-variable">&#123;&#123;color: <span class="string">"red"</span>&#125;&#125;</span><span class="xml"></span></div><div class="line"><span class="xml">/&gt;</span></div></pre></td></tr></table></figure>
+<h5 id="1-给-prop-赋值"><a href="#1-给-prop-赋值" class="headerlink" title="1.给 prop 赋值"></a>1.给 prop 赋值</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;SampleButton</span><br><span class="line">  id=&quot;sample&quot; borderWidth=&#123;2&#125; onClick=&#123;onButtonClick&#125;</span><br><span class="line">  style=&#123;&#123;color: &quot;red&quot;&#125;&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
+
 <a id="more"></a>
+
 <ul>
 <li>上面是一个名为 SampleButton 的组件实例，使用了名字分别为<code>id</code>、<code>borderWidth</code>、<code>onClick</code>和<code>style</code>的<code>prop</code>。</li>
 <li>看起来，<code>prop</code>很像是 HTML 元素的属性，不过：<ul>
@@ -215,7 +217,8 @@
 </ul>
 </li>
 </ul>
-<figure class="highlight roboconf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Counter.propTypes = &#123;</div><div class="line">  <span class="attribute">caption</span>: PropTypes<span class="variable">.string</span><span class="variable">.isRequired</span>,</div><div class="line">  initValue: PropTypes<span class="variable">.number</span></div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Counter.propTypes = &#123;</span><br><span class="line">  caption: PropTypes.string.isRequired,</span><br><span class="line">  initValue: PropTypes.number</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><code>caption</code> 必须为<code>string</code>类型，且是必须要指定的。</li>
 <li><code>initValue</code>必须是<code>number</code>类型，如果没有也没关系。</li>
@@ -233,19 +236,21 @@
 <h5 id="1-初始化state"><a href="#1-初始化state" class="headerlink" title="1. 初始化state"></a>1. 初始化<code>state</code></h5><ul>
 <li>通常在构造函数结尾处初始化 <code>state</code></li>
 </ul>
-<figure class="highlight delphi"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">constructor</span> <span class="params">(props)</span> <span class="comment">&#123;</span></span></div><div class="line"><span class="function"><span class="comment">  ...</span></span></div><div class="line"><span class="function"><span class="comment"></span></span></div><div class="line"><span class="function"><span class="comment">  this.state = &#123;</span></span></div><div class="line"><span class="function"><span class="comment">    count: props.initValue || 0</span></span></div><div class="line"><span class="function"><span class="comment">  &#125;</span></span></div><div class="line"><span class="function">&#125;</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">constructor (props) &#123;</span><br><span class="line">  ...</span><br><span class="line"></span><br><span class="line">  this.state = &#123;</span><br><span class="line">    count: props.initValue || 0</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><p>因为<code>initValue</code>是一个可选的<code>props</code>，要考虑到父组件没有指定其值的情况。如果没有的话就使用默认值<code>0</code>。</p>
 <ul>
 <li>不过，让这样的逻辑充斥在构造函数中并不是一件美观的事情，而且容易有遗漏。</li>
 <li>我们可以使用React的<code>defaultProps</code>功能，使代码更易懂。</li>
 </ul>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Counter<span class="selector-class">.defaultProps</span> = &#123;</div><div class="line">  initValue: <span class="number">0</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Counter.defaultProps = &#123;</span><br><span class="line">  initValue: 0</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>组建的<code>state</code>必须是一个<code>JavaScript</code>对象。</p>
 </li>
 </ul>
-<h5 id="2-读取和更新state"><a href="#2-读取和更新state" class="headerlink" title="2. 读取和更新state"></a>2. 读取和更新<code>state</code></h5><figure class="highlight pf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">on</span>ClickIncrementButton () &#123;</div><div class="line">  this.<span class="built_in">set</span>State(&#123;count: this.<span class="keyword">state</span>.count + <span class="number">1</span>&#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h5 id="2-读取和更新state"><a href="#2-读取和更新state" class="headerlink" title="2. 读取和更新state"></a>2. 读取和更新<code>state</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">onClickIncrementButton () &#123;</span><br><span class="line">  this.setState(&#123;count: this.state.count + 1&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>值得注意的是，我们改变组件<code>state</code>的值必须要使用<code>this.setState</code>函数，而不能直接去修改<code>this.state</code>。<ul>
 <li>因为，直接修改<code>this.state</code>的值，虽然事实上改变了组建的内部状态，但只是野蛮的修改了<code>state</code>，<strong>却没有驱动组件进行重新渲染</strong>，当然不会在页面上反应出变化。</li>
@@ -464,7 +469,7 @@
       <div id="vcomment" class="comment"></div>
 <script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
-<script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+<script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
 <script>
    var notify = 'false' == true ? true : false;
    var verify = 'false' == true ? true : false;
@@ -504,7 +509,7 @@
 		<div id="footer-info">
 			<div class="footer-left">
 				&copy;
-				2018
+				2019
 					Echo
 			</div>
 			<div class="footer-right">
@@ -609,11 +614,43 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">快捷键</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">排序</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">冒泡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+                <a href="javascript:void(0)" class="js-tag color1">issue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -629,27 +666,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">JRE</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">JVM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">issue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -673,11 +694,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MacBook</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+                <a href="javascript:void(0)" class="js-tag color3">MacBook</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -709,6 +730,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">时间复杂度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">空间复杂度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">并发</a>
               </li>
              
@@ -721,6 +750,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">抽象类</a>
               </li>
              
@@ -729,11 +762,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
+                <a href="javascript:void(0)" class="js-tag color3">思考</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">思考</a>
+                <a href="javascript:void(0)" class="js-tag color5">空间复杂度，稳定性</a>
               </li>
             
             <div class="clearfix"></div>
@@ -741,7 +774,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:

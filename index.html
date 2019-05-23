@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://echoguan.coding.me">
   <title>echo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -36,7 +36,7 @@
   
 
 </head>
-
+</html>
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -45,11 +45,11 @@
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="" class="profilepic">
+		<a href class="profilepic">
 			<img src="/assets/img/echo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="">Echo</a></h1>
+		  <h1 class="header-author"><a href>Echo</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">十年大计，日拱一卒</p>
@@ -148,6 +148,455 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-Time-Space-complexity" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/17/Time-Space-complexity/">算法时间复杂度、空间复杂度以及稳定性</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/17/Time-Space-complexity/" class="archive-article-date">
+  	<time datetime="2019-05-17T10:18:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-17</time>
+</a>
+        
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><ul>
+<li>算法（Algorithm）是指用来操作数据，解决程序问题的一组方法。</li>
+<li>对于同一种问题，使用不同的算法，也许得到的结果是一样的，但在过程中消耗的时间和资源却可能天差地别。</li>
+<li>所以怎么去衡量不同算法之间的优劣呢？我们主要从 <strong>时间</strong> 和 <strong>空间</strong> 两个维度来考量。<ul>
+<li><strong>时间复杂度：执行当前算法所消耗的时间。</strong> </li>
+<li><strong>空间复杂度：执行当前算法需要占用的内存空间。</strong> </li>
+<li>对于一个算法，时间复杂度和空间复杂度往往是相互影响、相互制约的。往往是 <strong>此消彼长</strong> 的关系，鱼和熊掌不可兼得。<ul>
+<li>所以当设计一个算法时，特别是大型算法，要综合考虑算法的各项性能，结合具体的使用场景，比如使用频率、数据量的大小、算法语言的特性以及机器环境等等各方面的因素，来设计出一个最优算法。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><h4 id="大O符号表示法"><a href="#大O符号表示法" class="headerlink" title="大O符号表示法"></a>大O符号表示法</h4><p>表示时间复杂度的通用方法是 <strong>大O符号表示法</strong> 。</p>
+<ul>
+<li><code>T(n)</code> 表示 <strong>时间频度</strong> ，是指 <strong>一个算法中语句执行次数。</strong> </li>
+<li>当 n 不断变化时，T(n) 也会随之不断变化。为了了解这个变化的规律，便引入了 <strong>时间复杂度</strong> 这一概念。</li>
+<li>如果有某个辅助函数 <code>f(n)</code> ，当 n 趋于无穷大时，<code>T(n)/f(n)</code> 的极限值是某个不为零的常数。那么 <code>f(n)</code> 是<code>T(n)</code> 的同数量级函数，记作 <code>T(n) = O(f(n))</code> ，被称为算法的渐进时间复杂度，简称为时间复杂度。</li>
+<li><code>T(n) = O(f(n))</code> ，表示随着输入 n 的增大，算法执行所需时间的增长速度可以用 <code>f(n)</code> 表示。</li>
+<li>大O符号表示法，表示的是<strong>代码执行时间的增长变化趋势。</strong> </li>
+</ul>
+<h4 id="如何计算执行次数-T-n-呢？下面是四个简单的法则："><a href="#如何计算执行次数-T-n-呢？下面是四个简单的法则：" class="headerlink" title="如何计算执行次数 T(n) 呢？下面是四个简单的法则："></a>如何计算执行次数 <code>T(n)</code> 呢？下面是四个简单的法则：</h4>
+        
+          <a class="article-more-a" href="/2019/05/17/Time-Space-complexity/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">时间复杂度</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">空间复杂度，稳定性</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/17/Time-Space-complexity/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Bubble-Sort" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/17/Bubble-Sort/">Bubble Sort</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/17/Bubble-Sort/" class="archive-article-date">
+  	<time datetime="2019-05-17T03:01:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-17</time>
+</a>
+        
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">排序</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">冒泡</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/17/Bubble-Sort/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-MEMO-Tips" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/22/MEMO-Tips/">学习备忘 Tips</a>
+    </h1>
+  
+
+        
+        <a href="/2019/04/22/MEMO-Tips/" class="archive-article-date">
+  	<time datetime="2019-04-22T00:47:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-22</time>
+</a>
+        
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h4><ul>
+<li>TLS - Transport Layer Security(传输层安全协议)<ul>
+<li>其前身是SSL(Secure Sockets Layer, 安全套接层)</li>
+<li>目的是为互联网通信提供安全及数据完整性保障。</li>
+</ul>
+</li>
+</ul>
+<h4 id="Node-js-ES6-CommonJS-Module-模块机制"><a href="#Node-js-ES6-CommonJS-Module-模块机制" class="headerlink" title="Node.js ES6/CommonJS Module 模块机制"></a>Node.js ES6/CommonJS Module 模块机制</h4><ul>
+<li>exports 和 module.exports 的区别了：<ul>
+<li>module.exports 初始值为一个空对象 {}</li>
+<li>exports 是指向的 module.exports 的引用</li>
+<li>require() 返回的是 module.exports 而不是 exports</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="https://www.jianshu.com/p/0bd1ae24152d" target="_blank" rel="noopener">CommonJS是什么？</a> </li>
+<li><a href="https://cnodejs.org/topic/5a0f2da5f9de6bb0542f090b" target="_blank" rel="noopener">Node 9下import/export的丝般顺滑使用</a> </li>
+<li><a href="http://javascript.ruanyifeng.com/nodejs/module.html" target="_blank" rel="noopener">CommonJS规范</a> </li>
+<li><a href="http://es6.ruanyifeng.com/#docs/module-loader" target="_blank" rel="noopener">Module 的加载实现</a> </li>
+</ul>
+<h4 id="JavaScript：变量提升和函数提升"><a href="#JavaScript：变量提升和函数提升" class="headerlink" title="JavaScript：变量提升和函数提升"></a><a href="https://www.cnblogs.com/liuhe688/p/5891273.html" target="_blank" rel="noopener">JavaScript：变量提升和函数提升</a></h4>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/22/MEMO-Tips/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Android-Studio-快捷键备忘" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/29/Android-Studio-快捷键备忘/">Android Studio 快捷键备忘</a>
+    </h1>
+  
+
+        
+        <a href="/2018/11/29/Android-Studio-快捷键备忘/" class="archive-article-date">
+  	<time datetime="2018-11-29T10:21:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-29</time>
+</a>
+        
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Esc</td>
+<td>让编辑器窗口获取焦点，这时候就可以输入代码了</td>
+</tr>
+<tr>
+<td>Shift + Esc</td>
+<td>这个会让编辑器获取焦点，并且顺手帮你把刚刚打开的窗口关闭了。</td>
+</tr>
+<tr>
+<td>shift + F6</td>
+<td>重命名变量(refactor)</td>
+</tr>
+<tr>
+<td>ctrl +左键点击方法名</td>
+<td>Show usages of method</td>
+</tr>
+<tr>
+<td>Ctrl + E</td>
+<td>显示最近打开的文件记录列表</td>
+</tr>
+<tr>
+<td>Ctrl + G</td>
+<td>在当前文件跳转到指定行处</td>
+</tr>
+<tr>
+<td>Ctrl + Q</td>
+<td>光标所在的变量 / 类名 / 方法名等上面（也可以在提示补充的时候按），显示文档内容</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + L</td>
+<td>格式化代码，可以对当前文件和整个包目录使用</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + U</td>
+<td>对选中的代码进行大 / 小写轮流转换</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + T</td>
+<td>对当前类生成单元测试类，如果已经存在的单元测试类则可以进行选择</td>
+</tr>
+<tr>
+<td>F2</td>
+<td>跳转到下一个高亮错误 或 警告位置</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><a href="https://my.oschina.net/quanke/blog/749038" target="_blank" rel="noopener">Android Studio 使用艺术 - 快捷键完整版</a> </p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Android</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">快捷键</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/11/29/Android-Studio-快捷键备忘/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-Java-equals和hashCode方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -506,7 +955,7 @@
 </li>
 <li><p>在 <code>themes/yilia/layout/_partial/footer.ejs</code> 中加入如下代码：</p>
 </li>
-<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 根据个人喜好在相应位置添加以下代码 --&gt;</div><div class="line">&lt;div calss=<span class="string">"count-span"</span>&gt;</div><div class="line">    &lt;span id=<span class="string">"busuanzi_container_site_pv"</span>&gt;</div><div class="line">    总访问量: <span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_pv"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span>|</div><div class="line">    &lt;<span class="regexp">/span&gt;</span></div><div class="line"><span class="regexp">    &lt;span id="busuanzi_container_site_uv"&gt;</span></div><div class="line"><span class="regexp">    总访客: &lt;span id="busuanzi_value_site_uv"&gt;&lt;/</span>span&gt;</div><div class="line">    &lt;<span class="regexp">/span&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>div&gt;</div><div class="line">&lt;!-- 根据个人喜好在相应位置添加以上代码 --&gt;</div><div class="line"></div><div class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 根据个人喜好在相应位置添加以下代码 --&gt;</span><br><span class="line">&lt;div calss=<span class="string">"count-span"</span>&gt;</span><br><span class="line">    &lt;span id=<span class="string">"busuanzi_container_site_pv"</span>&gt;</span><br><span class="line">    总访问量: &lt;span id="busuanzi_value_site_pv"&gt;&lt;/span&gt;|</span><br><span class="line">    &lt;<span class="regexp">/span&gt;</span></span><br><span class="line"><span class="regexp">    &lt;span id="busuanzi_container_site_uv"&gt;</span></span><br><span class="line"><span class="regexp">    总访客: &lt;span id="busuanzi_value_site_uv"&gt;&lt;/</span>span&gt;</span><br><span class="line">    &lt;<span class="regexp">/span&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">&lt;!-- 根据个人喜好在相应位置添加以上代码 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>然后重新部署发布博客即可。</p>
 </li>
@@ -528,7 +977,8 @@
 <h4 id="3-文章访问量统计"><a href="#3-文章访问量统计" class="headerlink" title="3. 文章访问量统计"></a>3. 文章访问量统计</h4><ul>
 <li>下面这段代码添加在<code>/themes/yilia/layout/_partial/article.ejs</code> 的header的日期后面：</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">// 添加判断，如果首页则不显示访问量</div><div class="line">&lt;% if ( !index )&#123; %&gt;</div><div class="line">    &lt;span class=&quot;archive-article-date&quot;&gt;</div><div class="line">        阅读量 &lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;</div><div class="line">    &lt;/span&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 添加判断，如果首页则不显示访问量</span><br><span class="line">&lt;% if ( !index )&#123; %&gt;</span><br><span class="line">    &lt;span class=&quot;archive-article-date&quot;&gt;</span><br><span class="line">        阅读量 &lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;</span><br><span class="line">    &lt;/span&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p><a href="https://meetes.top/2018/01/31/Hexo%20+%20yilia%20%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%8F%AF%E8%83%BD%E4%BC%9A%E9%81%87%E5%88%B0%E7%9A%84%E6%89%80%E6%9C%89%E7%96%91%E9%97%AE/" target="_blank" rel="noopener">Hexo + yilia 搭建博客可能会遇到的所有疑问</a> </p>
 <p><a href="http://www.lookk.cn/2017/12/09/hexo-yilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%E7%BB%9F%E8%AE%A1/" target="_blank" rel="noopener">hexo yilia主题添加文章访问量统计</a> </p>
@@ -597,458 +1047,9 @@
 
 
   
-    <article id="post-Java-枚举类型介绍总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/14/Java-枚举类型介绍总结/">Java - 枚举类型介绍总结</a>
-    </h1>
-  
-
-        
-        <a href="/2018/10/14/Java-枚举类型介绍总结/" class="archive-article-date">
-  	<time datetime="2018-10-14T13:18:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-14</time>
-</a>
-        
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p>枚举类型（<code>enum type</code>）是指由一组固定的常量组成合法的类型。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">enum</span> Season &#123;</div><div class="line">    SPRING, SUMMER, AUTUMN, WINTER;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>特点：</p>
-<ul>
-<li>使用关键字<code>enum</code> </li>
-<li>类型名称，如<code>Season</code> </li>
-<li>一串允许的值（<code>SPRING, SUMMER, AUTUMN, WINTER</code>）</li>
-<li>枚举可以单独定义在一个文件中，也可以嵌在其它 <code>Java类</code> 中。</li>
-<li><code>枚举类型</code> 可以实现一个或多个接口</li>
-<li>可以定义新的变量</li>
-<li>可以定义新的方法</li>
-<li>可以定义根据具体枚举值而相异的类</li>
-</ul>
-</li>
-<li><p>应用举例：</p>
-<blockquote>
-<p><a href="http://www.hollischuang.com/archives/195" target="_blank" rel="noopener">Hollis - Java的枚举类型用法介绍</a> </p>
-</blockquote>
-</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Interview</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">枚举类型</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/10/14/Java-枚举类型介绍总结/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Android-Ramp-Up-Memo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/11/Android-Ramp-Up-Memo/">Android - Ramp Up 笔记</a>
-    </h1>
-  
-
-        
-        <a href="/2018/09/11/Android-Ramp-Up-Memo/" class="archive-article-date">
-  	<time datetime="2018-09-11T02:40:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-11</time>
-</a>
-        
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h4><ul>
-<li><strong>Acceptance Criteria</strong> </li>
-<li>MVP, Dagger2, Retrofit, RxJava, Unit test</li>
-</ul>
-<h4 id="MVP-Pattern"><a href="#MVP-Pattern" class="headerlink" title="MVP Pattern"></a>MVP Pattern</h4><ul>
-<li><p>Model-View-Presenter</p>
-</li>
-<li><p>是由 <code>MVC</code> 演变而来。在 <code>MVP</code> 中：</p>
-<ul>
-<li><code>View</code> 更加专注于处理数据可视化和页面交互</li>
-<li><code>Model</code> 更加专注于数据的处理</li>
-<li><code>Presenter</code> 则提供 <code>View</code> 和 <code>Model</code> 之间数据的纽带，用于交互和数据传输</li>
-</ul>
-</li>
-<li><p><strong><code>View</code>不直接与<code>Model</code>交互</strong> </p>
-</li>
-<li><h4 id="MVP-in-four-bullet-points"><a href="#MVP-in-four-bullet-points" class="headerlink" title="MVP in four bullet points"></a>MVP in four bullet points</h4><ul>
-<li>MVP stands for Model-View-Presenter.</li>
-<li>The “Model” is your data source, doesn’t matter if a database, network calls or a hard-coded list of objects.</li>
-<li>The “View” is your Activity, Fragment or custom Android View. Which should just take care of displaying things and handling user interaction.</li>
-<li>The “Presenter” is a plain old java object (POJO) that handles the communication between the View and the Model, makes any required data transformations, handles errors from the Model and tries to remove as much UX logic from the View as possible.</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p><a href="https://blog.csdn.net/u011418943/article/details/69840880" target="_blank" rel="noopener">MVP 设计模式理解，实战理解MVP</a> </p>
-<p><a href="https://www.jianshu.com/p/9a6845b26856" target="_blank" rel="noopener">Android MVP 详解（上）</a> </p>
-</blockquote>
-        
-          <a class="article-more-a" href="/2018/09/11/Android-Ramp-Up-Memo/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Android</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/11/Android-Ramp-Up-Memo/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-JDK-JRE-JVM简介" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/09/JDK-JRE-JVM简介/">Java - JDK, JRE, JVM简介</a>
-    </h1>
-  
-
-        
-        <a href="/2018/09/09/JDK-JRE-JVM简介/" class="archive-article-date">
-  	<time datetime="2018-09-09T06:01:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-09</time>
-</a>
-        
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="JDK-Java-Development-ToolKit-Java-开发工具包"><a href="#JDK-Java-Development-ToolKit-Java-开发工具包" class="headerlink" title="JDK(Java Development ToolKit) - Java 开发工具包"></a>JDK(Java Development ToolKit) - Java 开发工具包</h4><ul>
-<li><code>JDK</code> 是整个 Java 的<strong>核心</strong>。</li>
-<li>包括：<ul>
-<li><strong>JRE</strong> - Java 运行环境</li>
-<li><strong>Java API</strong> - Java 基础的<strong>类库</strong> </li>
-<li>一堆<code>Java 工具</code>（javac/java/jdb等）</li>
-</ul>
-</li>
-</ul>
-<h4 id="JRE-Java-Runtime-Environment-Java-运行时环境"><a href="#JRE-Java-Runtime-Environment-Java-运行时环境" class="headerlink" title="JRE(Java Runtime Environment) - Java 运行时环境"></a>JRE(Java Runtime Environment) - Java 运行时环境</h4><ul>
-<li><p>所有的 Java 程序都必须在 <code>JRE</code> 下才能<strong>运行</strong>。</p>
-</li>
-<li><p>包括：</p>
-<ul>
-<li>JVM</li>
-<li>Java 核心类库</li>
-<li>支持文件</li>
-</ul>
-</li>
-</ul>
-<h4 id="JVM-Java-Virtual-Mechinal-Java-虚拟机"><a href="#JVM-Java-Virtual-Mechinal-Java-虚拟机" class="headerlink" title="JVM(Java Virtual Mechinal) - Java 虚拟机"></a>JVM(Java Virtual Mechinal) - Java 虚拟机</h4><ul>
-<li><code>JVM</code> 是 <code>JRE</code> 的一部分。</li>
-<li>它是一个虚构出来的计算机。</li>
-<li><code>JVM</code> 有自己完善的硬件架构，如处理器、堆栈、寄存器等，还具有相应的指令系统。</li>
-<li><code>JVM</code> 的主要工作是，解释自己的编码集，并映射到本地 CPU 的指令集或 OS 的系统调用。</li>
-<li>Java 语言的跨平台特性，其实就是不同的操作系统，使用不同的 JVM 映射规则。</li>
-</ul>
-<p><img src="/images/JDKJREJVM-relation.gif" alt="JDK JRE JVM 关系"> </p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">JDK</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">JRE</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">JVM</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/09/JDK-JRE-JVM简介/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-深入理解-Spring-IoC" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/05/深入理解-Spring-IoC/">Spring - 深入理解 Spring IoC</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/05/深入理解-Spring-IoC/" class="archive-article-date">
-  	<time datetime="2018-08-05T08:38:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
-        
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="IOC-理论"><a href="#IOC-理论" class="headerlink" title="IOC 理论"></a>IOC 理论</h4><ul>
-<li>IoC 全称为 <code>InversionofControl</code>，翻译为 “控制反转”，它还有一个别名为 DI（ <code>DependencyInjection</code>），即依赖注入。</li>
-<li><strong>所谓 IOC ，就是由 Spring IOC 容器来负责对象的生命周期和对象之间的关系。</strong></li>
-<li>IoC 的理念就是<strong>让别人为你服务。</strong></li>
-</ul>
-<ol>
-<li><strong>谁控制谁</strong>：在传统的开发模式下，我们都是采用直接 new 一个对象的方式来创建对象，也就是说你依赖的对象直接由你自己控制，但是有了 IOC 容器后，则直接由 IoC 容器来控制。所以“谁控制谁”，当然是 IoC 容器控制对象。</li>
-<li><strong>控制什么</strong>：控制对象。</li>
-<li><strong>为何是反转</strong>：没有 IoC 的时候我们都是在自己对象中主动去创建被依赖的对象，这是正转。但是有了 IoC 后，所依赖的对象直接由 IoC 容器创建后注入到被注入的对象中，依赖的对象由原来的主动获取变成被动接受，所以是反转。</li>
-<li><strong>哪些方面反转了</strong>：所依赖对象的获取被反转了。</li>
-</ol>
-<ul>
-<li>IOC Service Provider 为被注入对象提供被依赖对象也有如下几种方式：<strong>构造器注入</strong>、<strong>setter 注入</strong>、<strong>接口注入</strong>。</li>
-</ul>
-<blockquote>
-<p><a href="https://mp.weixin.qq.com/s/nCvZ9NbNQeD_FtJyho4owg" target="_blank" rel="noopener">【死磕 Spring】—– IOC 之深入理解 Spring IoC</a></p>
-</blockquote>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Spring</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/05/深入理解-Spring-IoC/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
@@ -1061,7 +1062,7 @@
 		<div id="footer-info">
 			<div class="footer-left">
 				&copy;
-				2018
+				2019
 					Echo
 			</div>
 			<div class="footer-right">
@@ -1166,11 +1167,43 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">快捷键</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">排序</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">冒泡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+                <a href="javascript:void(0)" class="js-tag color1">issue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1186,27 +1219,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">JRE</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">JVM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">issue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1230,11 +1247,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MacBook</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+                <a href="javascript:void(0)" class="js-tag color3">MacBook</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1266,6 +1283,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">时间复杂度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">空间复杂度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">并发</a>
               </li>
              
@@ -1278,6 +1303,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">抽象类</a>
               </li>
              
@@ -1286,11 +1315,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
+                <a href="javascript:void(0)" class="js-tag color3">思考</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">思考</a>
+                <a href="javascript:void(0)" class="js-tag color5">空间复杂度，稳定性</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1298,7 +1327,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:

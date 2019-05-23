@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://echoguan.coding.me">
   <title>Blog - 将Blog同时托管在Coding和GitHub | echo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="echo">
 <meta property="og:description" content="GitHub毕竟是国外网站，访问速度上略慢，而且GitHub屏蔽了百度爬虫，所以我们再将博客部署到国内的托管平台Coding。  Coding配置 如果没有Coding账号，注册一个。 在Coding上新建一个项目。 项目名称建议与用户名相同。这样在访问 yourusername.coding.me就可以访问博客；否则还需要带上项目名，即访问yourusername.coding.me/项目名才">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-22T02:58:38.321Z">
+<meta property="og:updated_time" content="2019-05-20T11:03:00.543Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Blog - 将Blog同时托管在Coding和GitHub">
 <meta name="twitter:description" content="GitHub毕竟是国外网站，访问速度上略慢，而且GitHub屏蔽了百度爬虫，所以我们再将博客部署到国内的托管平台Coding。  Coding配置 如果没有Coding账号，注册一个。 在Coding上新建一个项目。 项目名称建议与用户名相同。这样在访问 yourusername.coding.me就可以访问博客；否则还需要带上项目名，即访问yourusername.coding.me/项目名才">
@@ -38,7 +38,7 @@
   
 
 </head>
-
+</html>
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -47,11 +47,11 @@
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="" class="profilepic">
+		<a href class="profilepic">
 			<img src="/assets/img/echo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="">Echo</a></h1>
+		  <h1 class="header-author"><a href>Echo</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">十年大计，日拱一卒</p>
@@ -187,21 +187,24 @@
 </li>
 </ol>
 <a id="more"></a>
+
 <h3 id="config-yml配置"><a href="#config-yml配置" class="headerlink" title="_config.yml配置"></a><code>_config.yml</code>配置</h3><ul>
 <li><p>为了同时可以部署到两个平台，就需要修改<code>_config.yml</code>的<code>deploy</code>属性。</p>
 <ul>
 <li>需要修改为如下格式：</li>
 </ul>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">deploy:</span></div><div class="line"><span class="symbol">  type:</span> git</div><div class="line"><span class="symbol">  message:</span> [message]</div><div class="line"><span class="symbol">  repo:</span></div><div class="line"><span class="symbol">    github:</span> <span class="params">&lt;repository url&gt;</span>,[branch]</div><div class="line"><span class="symbol">    gitcafe:</span> <span class="params">&lt;repository url&gt;</span>,[branch]</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  message: [message]</span><br><span class="line">  repo:</span><br><span class="line">    github: &lt;repository url&gt;,[branch]</span><br><span class="line">    gitcafe: &lt;repository url&gt;,[branch]</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>例如修改为：</li>
 </ul>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">deploy</span>:</div><div class="line">  <span class="attribute">type</span>: git</div><div class="line">  <span class="attribute">repo</span>:</div><div class="line">    <span class="attribute">github</span>: <span class="attribute">https</span>:<span class="comment">//github.com/echoguan/echoguan.github.io.git,master</span></div><div class="line">    <span class="attribute">coding</span>: git<span class="variable">@git</span>.coding.<span class="attribute">net</span>:echoguan/echoguan.git,master</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo:</span><br><span class="line">    github: https://github.com/echoguan/echoguan.github.io.git,master</span><br><span class="line">    coding: git@git.coding.net:echoguan/echoguan.git,master</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>最后使用部署命令就能把博客同步到coding上面：</p>
 </li>
 </ul>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo deploy -g</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy -g</span><br></pre></td></tr></table></figure>
+
 <h3 id="Pages服务方式部署"><a href="#Pages服务方式部署" class="headerlink" title="Pages服务方式部署"></a>Pages服务方式部署</h3><ul>
 <li>此处使用较为简单的静态Pages部署方式。分支来源选择master即可。</li>
 <li>至此，访问<a href="yourusername.coding.me">yourusername.coding.me</a>就可以看到你在Coding上的博客啦。</li>
@@ -379,8 +382,8 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Coding配置"><span class="toc-number">1.</span> <span class="toc-text">Coding配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#config-yml配置"><span class="toc-number">2.</span> <span class="toc-text">_config.yml配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pages服务方式部署"><span class="toc-number">3.</span> <span class="toc-text">Pages服务方式部署</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#References"><span class="toc-number"></span> <span class="toc-text">References</span></a>
-                    </div>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Coding配置"><span class="toc-number">1.</span> <span class="toc-text">Coding配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#config-yml配置"><span class="toc-number">2.</span> <span class="toc-text">_config.yml配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pages服务方式部署"><span class="toc-number">3.</span> <span class="toc-text">Pages服务方式部署</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#References"><span class="toc-number"></span> <span class="toc-text">References</span></a>
+                    </li></div>
                 </span>
             </div>
         </div>
@@ -410,7 +413,7 @@
       <div id="vcomment" class="comment"></div>
 <script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
-<script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+<script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
 <script>
    var notify = 'false' == true ? true : false;
    var verify = 'false' == true ? true : false;
@@ -450,7 +453,7 @@
 		<div id="footer-info">
 			<div class="footer-left">
 				&copy;
-				2018
+				2019
 					Echo
 			</div>
 			<div class="footer-right">
@@ -555,11 +558,43 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">快捷键</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">排序</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">冒泡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+                <a href="javascript:void(0)" class="js-tag color1">issue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -575,27 +610,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">JRE</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">JVM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">issue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -619,11 +638,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MacBook</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+                <a href="javascript:void(0)" class="js-tag color3">MacBook</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -655,6 +674,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">时间复杂度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">空间复杂度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">并发</a>
               </li>
              
@@ -667,6 +694,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">抽象类</a>
               </li>
              
@@ -675,11 +706,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
+                <a href="javascript:void(0)" class="js-tag color3">思考</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">思考</a>
+                <a href="javascript:void(0)" class="js-tag color5">空间复杂度，稳定性</a>
               </li>
             
             <div class="clearfix"></div>
@@ -687,7 +718,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:

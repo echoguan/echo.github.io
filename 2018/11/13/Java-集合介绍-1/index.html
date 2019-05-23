@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://echoguan.coding.me">
   <title>Java - 集合介绍(1) - Note | echo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://echoguan.coding.me/images/Collection.png">
 <meta property="og:image" content="http://echoguan.coding.me/images/Map.png">
-<meta property="og:updated_time" content="2018-11-23T05:37:15.350Z">
+<meta property="og:updated_time" content="2019-05-20T11:03:00.531Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java - 集合介绍(1) - Note">
 <meta name="twitter:description" content="Ruheng - 由浅入深理解java集合(一)——集合框架 Collection、Map   集合简介 Java 集合 大致可分为Set , List , Queue , Map 四大体系。 Set 代表 无序、不可重复 的集合。 List 代表 有序、可重复 的集合。 Map 代表具有 映射关系 的集合。 Queue 代表 队列 集合。  Java 集合和数组的区别 长度   数组 的长度在">
@@ -41,7 +41,7 @@
   
 
 </head>
-
+</html>
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -50,11 +50,11 @@
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="" class="profilepic">
+		<a href class="profilepic">
 			<img src="/assets/img/echo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="">Echo</a></h1>
+		  <h1 class="header-author"><a href>Echo</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">十年大计，日拱一卒</p>
@@ -202,6 +202,9 @@
 </li>
 </ul>
 <a id="more"></a>
+
+
+
 <h4 id="集合类之间的继承关系"><a href="#集合类之间的继承关系" class="headerlink" title="集合类之间的继承关系"></a>集合类之间的继承关系</h4><ul>
 <li><img src="/images/Collection.png" alt="Collection"> </li>
 <li><img src="/images/Map.png" alt="Map"> </li>
@@ -220,8 +223,7 @@
 <th>Desc</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>Boolean</td>
 <td>add(E e)</td>
 <td>Ensures that this collection contains the specified element (optional operation).</td>
@@ -316,8 +318,7 @@
 <td>toArray(T[] a)</td>
 <td>Returns an array containing all of the elements in this collection; the runtime type of the returned array is that of the specified array.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="Set-集合"><a href="#Set-集合" class="headerlink" title="Set 集合"></a>Set 集合</h4><ul>
 <li><code>Set 集合</code> 与 <code>Collection 集合</code> 基本相同，没有提供额外的方法。</li>
 <li>只是<code>Set</code> 行为略有不同，<strong>不允许包含重复元素</strong> 。</li>
@@ -343,8 +344,7 @@
 <th>Desc</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>void</td>
 <td>add(int index, E element)</td>
 <td>Inserts the specified element at the specified position in this list (optional operation).</td>
@@ -399,8 +399,7 @@
 <td>sort(Comparator&lt;? super E&gt; c)</td>
 <td>Sorts this list according to the order induced by the specified <a href="https://docs.oracle.com/javase/10/docs/api/java/util/Comparator.html" target="_blank" rel="noopener"><code>Comparator</code></a>.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="Queue-集合"><a href="#Queue-集合" class="headerlink" title="Queue 集合"></a>Queue 集合</h4><ul>
 <li><code>队列</code> 数据结构。队列通常是指<strong>先进先出 FIFI</strong> 的容器。</li>
 <li>通常，队列不允许随机访问队列中的元素。</li>
@@ -413,8 +412,7 @@
 <th>Desc</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>boolean</td>
 <td>add(E e)</td>
 <td>Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions, returning <code>true</code> upon success and throwing an <code>IllegalStateException</code> if no space is currently available.</td>
@@ -444,8 +442,7 @@
 <td>remove()</td>
 <td>Retrieves and removes the head of this queue.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="Map-集合"><a href="#Map-集合" class="headerlink" title="Map 集合"></a>Map 集合</h4><ul>
 <li><p><code>Map</code> 保存具有映射关系的数据。<code>key</code> 和 <code>value</code> 都可以是任何引用类型的数据。</p>
 </li>
@@ -477,8 +474,7 @@
 <th>Desc</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>void</td>
 <td>clear()</td>
 <td>Removes all of the mappings from this map (optional operation).</td>
@@ -548,8 +544,7 @@
 <td>values()</td>
 <td>Returns a <a href="https://docs.oracle.com/javase/10/docs/api/java/util/Collection.html" target="_blank" rel="noopener"><code>Collection</code></a> view of the values contained in this map.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <ul>
 <li><code>Map</code> 还包含一个<strong>内部类</strong> <code>Entry</code> ，该类封装了一个<code>key-value</code> 对。</li>
 </ul>
@@ -561,8 +556,7 @@
 <th>Desc</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>boolean</td>
 <td>equals(Object o)</td>
 <td>Compares the specified object with this entry for equality.</td>
@@ -587,8 +581,7 @@
 <td>setValue(V value)</td>
 <td>Replaces the value corresponding to this entry with the specified value (optional operation).</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 
       
 
@@ -783,7 +776,7 @@
       <div id="vcomment" class="comment"></div>
 <script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
-<script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+<script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
 <script>
    var notify = 'false' == true ? true : false;
    var verify = 'false' == true ? true : false;
@@ -823,7 +816,7 @@
 		<div id="footer-info">
 			<div class="footer-left">
 				&copy;
-				2018
+				2019
 					Echo
 			</div>
 			<div class="footer-right">
@@ -928,11 +921,43 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">快捷键</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">排序</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">冒泡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+                <a href="javascript:void(0)" class="js-tag color1">issue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -948,27 +973,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">JRE</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">JVM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Interview</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">issue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -992,11 +1001,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MacBook</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+                <a href="javascript:void(0)" class="js-tag color3">MacBook</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1028,6 +1037,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">时间复杂度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">空间复杂度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">并发</a>
               </li>
              
@@ -1040,6 +1057,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">抽象类</a>
               </li>
              
@@ -1048,11 +1069,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
+                <a href="javascript:void(0)" class="js-tag color3">思考</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">思考</a>
+                <a href="javascript:void(0)" class="js-tag color5">空间复杂度，稳定性</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1060,7 +1081,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
