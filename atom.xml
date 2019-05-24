@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://echoguan.coding.me/"/>
-  <updated>2019-05-23T05:51:32.138Z</updated>
+  <updated>2019-05-24T06:21:15.964Z</updated>
   <id>http://echoguan.coding.me/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计数质数 - 厄拉多塞筛法</title>
+    <link href="http://echoguan.coding.me/2019/05/24/Count-Primes-Sieve-of-Eeatosthese/"/>
+    <id>http://echoguan.coding.me/2019/05/24/Count-Primes-Sieve-of-Eeatosthese/</id>
+    <published>2019-05-24T05:47:01.000Z</published>
+    <updated>2019-05-24T06:21:15.964Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>题目：204. 计数质数（统计所有小于非负整数 n 的质数的数量）</p></blockquote><p>质数：又称素数，指在大于 1 的自然数中，除了1和该数自身外，无法被其他自然数整除的数。</p><h3 id="思路一"><a href="#思路一" class="headerlink" title="思路一"></a>思路一</h3><h4 id="具体思路"><a href="#具体思路" class="headerlink" title="具体思路"></a>具体思路</h4><ul><li>遍历数字 n 是否能被从 2 到 sqrt(n) 之间的质数整除。</li></ul><h4 id="代码（JAVA）"><a href="#代码（JAVA）" class="headerlink" title="代码（JAVA）"></a><a href="https://github.com/echoguan/LeetCode/blob/master/src/com/echo/easy/_204/CountPrimes.java" target="_blank" rel="noopener">代码（JAVA）</a></h4><h3 id="思路二：厄拉多塞筛法"><a href="#思路二：厄拉多塞筛法" class="headerlink" title="思路二：厄拉多塞筛法"></a>思路二：厄拉多塞筛法</h3><h4 id="具体思路-1"><a href="#具体思路-1" class="headerlink" title="具体思路"></a>具体思路</h4><ul><li>先将 <code>2-n</code> 的各个数字放入表中。</li><li>在 2 的上面画一个圆圈；然后划去其它所有 2 的倍数的数字。</li><li>接下来第一个未画圈又没有被划去的数字是 3，将它画圈；然后再划去 3 的倍数。</li><li>接下来第一个未画圈又没有被划去的数字是 5，将它画圈；然后再划去 5 的倍数。</li><li>…… 以此类推；直到所有小于或者等于 n 的数字都被画圈或者划掉为止。<ul><li>其实，当你要画圈的数字的平方大于 n 时，那么后面没有被划掉的数字都是质数，不需要继续往后判断了。</li></ul></li><li>这时表中所有画了圈和未被划去的数字就是小于等于 n 的质数。</li></ul><h4 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h4><p><img src="/images/Sieve_of_Eratosthenes_animation.gif" alt="iterm2">   </p><h4 id="代码（JAVA）-1"><a href="#代码（JAVA）-1" class="headerlink" title="代码（JAVA）"></a><a href="https://github.com/echoguan/LeetCode/blob/master/src/com/echo/easy/_204/CountPrimesEeatosthese.java" target="_blank" rel="noopener">代码（JAVA）</a></h4><h3 id="思路比较"><a href="#思路比较" class="headerlink" title="思路比较"></a>思路比较</h3><ul><li>思路一比较容易想到，但思路二效率会高很多。</li></ul><blockquote><p>REFERENCES</p><ul><li><a href="https://blog.csdn.net/u013291076/article/details/45575967" target="_blank" rel="noopener">__Daniel - 厄拉多塞筛法</a></li></ul></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;题目：204. 计数质数（统计所有小于非负整数 n 的质数的数量）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;质数：又称素数，指在大于 1 的自然数中，除了1和该数自身外，无法被其他自然数整除的数。&lt;/p&gt;
+&lt;h3 id=&quot;思路一&quot;&gt;&lt;a href
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="算法" scheme="http://echoguan.coding.me/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="http://echoguan.coding.me/tags/LeetCode/"/>
+    
+      <category term="Primes" scheme="http://echoguan.coding.me/tags/Primes/"/>
+    
+  </entry>
   
   <entry>
     <title>算法时间复杂度、空间复杂度以及稳定性</title>
@@ -450,9 +483,9 @@
       <category term="技术" scheme="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="工具" scheme="http://echoguan.coding.me/tags/%E5%B7%A5%E5%85%B7/"/>
-    
       <category term="JDK" scheme="http://echoguan.coding.me/tags/JDK/"/>
+    
+      <category term="工具" scheme="http://echoguan.coding.me/tags/%E5%B7%A5%E5%85%B7/"/>
     
       <category term="备忘" scheme="http://echoguan.coding.me/tags/%E5%A4%87%E5%BF%98/"/>
     
@@ -638,34 +671,6 @@
     
     
       <category term="git" scheme="http://echoguan.coding.me/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java - 数组声明与初始化</title>
-    <link href="http://echoguan.coding.me/2018/03/27/Java%E6%95%B0%E7%BB%84%E5%A3%B0%E6%98%8E%E4%B8%8E%E5%88%9D%E5%A7%8B%E5%8C%96/"/>
-    <id>http://echoguan.coding.me/2018/03/27/Java数组声明与初始化/</id>
-    <published>2018-03-27T06:30:32.000Z</published>
-    <updated>2019-05-20T11:03:00.533Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="数组声明"><a href="#数组声明" class="headerlink" title="数组声明"></a>数组声明</h5><ul><li>格式： <code>数据类型 + [] + 数组名称</code>，例如<code>int[] a</code>。</li></ul><h5 id="数组初始化"><a href="#数组初始化" class="headerlink" title="数组初始化"></a>数组初始化</h5><h6 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h6><ul><li>静态初始化：不用<code>new</code>关键字，在数组声明的同时完成初始化操作。</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int[] a = &#123;1, 2, 3&#125;;</span><br><span class="line"></span><br><span class="line">Integer[] b = &#123;</span><br><span class="line">  new Integer(1),</span><br><span class="line">  new Integer(2),</span><br><span class="line">  3               //Autoboxing</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h6 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h6><ul><li>先使用<code>new</code>关键字创建数组。<ul><li>在完成<code>new</code>操作之后，<strong>数组中的元素会自动初始化为空值</strong>（例如<code>int</code>，会被自动初始化为<code>0</code>；<code>String</code>会被自动自动初始化为<code>null</code>）。</li></ul></li><li>然后再分别为数组中的元素赋值，完成初始化操作。</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int[] a = new int[2];</span><br><span class="line">a[0] = 1;</span><br><span class="line">a[1] = 2;</span><br></pre></td></tr></table></figure><h6 id="第三种"><a href="#第三种" class="headerlink" title="第三种"></a>第三种</h6><ul><li>使用<code>new</code>关键字创建数组，同时为数组的元素赋值，完成初始化操作。</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int[] a = new int[]&#123;1, 2, 3&#125;;</span><br><span class="line"></span><br><span class="line">Integer[] b = new Integer[] &#123;</span><br><span class="line">  new Integer(1),</span><br><span class="line">  new Integer(2),</span><br><span class="line">  3</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h5 id=&quot;数组声明&quot;&gt;&lt;a href=&quot;#数组声明&quot; class=&quot;headerlink&quot; title=&quot;数组声明&quot;&gt;&lt;/a&gt;数组声明&lt;/h5&gt;&lt;ul&gt;
-&lt;li&gt;格式： &lt;code&gt;数据类型 + [] + 数组名称&lt;/code&gt;，例如&lt;code&gt;int[] a&lt;/code&gt;
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="面试" scheme="http://echoguan.coding.me/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-      <category term="数组" scheme="http://echoguan.coding.me/tags/%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   

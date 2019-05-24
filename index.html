@@ -149,6 +149,127 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Count-Primes-Sieve-of-Eeatosthese" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/24/Count-Primes-Sieve-of-Eeatosthese/">计数质数 - 厄拉多塞筛法</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/24/Count-Primes-Sieve-of-Eeatosthese/" class="archive-article-date">
+  	<time datetime="2019-05-24T05:47:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-24</time>
+</a>
+        
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>题目：204. 计数质数（统计所有小于非负整数 n 的质数的数量）</p>
+</blockquote>
+<p>质数：又称素数，指在大于 1 的自然数中，除了1和该数自身外，无法被其他自然数整除的数。</p>
+<h3 id="思路一"><a href="#思路一" class="headerlink" title="思路一"></a>思路一</h3><h4 id="具体思路"><a href="#具体思路" class="headerlink" title="具体思路"></a>具体思路</h4><ul>
+<li>遍历数字 n 是否能被从 2 到 sqrt(n) 之间的质数整除。</li>
+</ul>
+<h4 id="代码（JAVA）"><a href="#代码（JAVA）" class="headerlink" title="代码（JAVA）"></a><a href="https://github.com/echoguan/LeetCode/blob/master/src/com/echo/easy/_204/CountPrimes.java" target="_blank" rel="noopener">代码（JAVA）</a></h4><h3 id="思路二：厄拉多塞筛法"><a href="#思路二：厄拉多塞筛法" class="headerlink" title="思路二：厄拉多塞筛法"></a>思路二：厄拉多塞筛法</h3><h4 id="具体思路-1"><a href="#具体思路-1" class="headerlink" title="具体思路"></a>具体思路</h4><ul>
+<li>先将 <code>2-n</code> 的各个数字放入表中。</li>
+<li>在 2 的上面画一个圆圈；然后划去其它所有 2 的倍数的数字。</li>
+<li>接下来第一个未画圈又没有被划去的数字是 3，将它画圈；然后再划去 3 的倍数。</li>
+<li>接下来第一个未画圈又没有被划去的数字是 5，将它画圈；然后再划去 5 的倍数。</li>
+<li>…… 以此类推；直到所有小于或者等于 n 的数字都被画圈或者划掉为止。<ul>
+<li>其实，当你要画圈的数字的平方大于 n 时，那么后面没有被划掉的数字都是质数，不需要继续往后判断了。</li>
+</ul>
+</li>
+<li>这时表中所有画了圈和未被划去的数字就是小于等于 n 的质数。</li>
+</ul>
+<h4 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h4><p><img src="/images/Sieve_of_Eratosthenes_animation.gif" alt="iterm2">   </p>
+<h4 id="代码（JAVA）-1"><a href="#代码（JAVA）-1" class="headerlink" title="代码（JAVA）"></a><a href="https://github.com/echoguan/LeetCode/blob/master/src/com/echo/easy/_204/CountPrimesEeatosthese.java" target="_blank" rel="noopener">代码（JAVA）</a></h4><h3 id="思路比较"><a href="#思路比较" class="headerlink" title="思路比较"></a>思路比较</h3><ul>
+<li>思路一比较容易想到，但思路二效率会高很多。</li>
+</ul>
+<blockquote>
+<p>REFERENCES</p>
+<ul>
+<li><a href="https://blog.csdn.net/u013291076/article/details/45575967" target="_blank" rel="noopener">__Daniel - 厄拉多塞筛法</a></li>
+</ul>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">LeetCode</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Primes</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/24/Count-Primes-Sieve-of-Eeatosthese/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Time-Space-complexity" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -942,131 +1063,6 @@
 
 
   
-    <article id="post-hexo-yilia-博客访问量统计显示" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/12/hexo-yilia-博客访问量统计显示/">Blog - hexo + yilia 博客访问量统计显示</a>
-    </h1>
-  
-
-        
-        <a href="/2018/11/12/hexo-yilia-博客访问量统计显示/" class="archive-article-date">
-  	<time datetime="2018-11-12T07:06:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-12</time>
-</a>
-        
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="1-网站访问量显示"><a href="#1-网站访问量显示" class="headerlink" title="1. 网站访问量显示"></a>1. 网站访问量显示</h4><ul>
-<li><p>效果</p>
-<ul>
-<li>见博客底部</li>
-</ul>
-</li>
-<li><p>实现</p>
-<ul>
-<li><p>使用 <strong><a href="http://ibruce.info/" target="_blank" rel="noopener">不蒜子</a></strong> ，可以看官方介绍。</p>
-</li>
-<li><p>在 <code>themes/yilia/layout/_partial/footer.ejs</code> 中加入如下代码：</p>
-</li>
-<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 根据个人喜好在相应位置添加以下代码 --&gt;</span><br><span class="line">&lt;div calss=<span class="string">"count-span"</span>&gt;</span><br><span class="line">    &lt;span id=<span class="string">"busuanzi_container_site_pv"</span>&gt;</span><br><span class="line">    总访问量: &lt;span id="busuanzi_value_site_pv"&gt;&lt;/span&gt;|</span><br><span class="line">    &lt;<span class="regexp">/span&gt;</span></span><br><span class="line"><span class="regexp">    &lt;span id="busuanzi_container_site_uv"&gt;</span></span><br><span class="line"><span class="regexp">    总访客: &lt;span id="busuanzi_value_site_uv"&gt;&lt;/</span>span&gt;</span><br><span class="line">    &lt;<span class="regexp">/span&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">&lt;!-- 根据个人喜好在相应位置添加以上代码 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>然后重新部署发布博客即可。</p>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="2-网站-IP-访问量显示-友盟"><a href="#2-网站-IP-访问量显示-友盟" class="headerlink" title="2. 网站 IP 访问量显示(友盟)"></a>2. 网站 IP 访问量显示(友盟)</h4><ul>
-<li><p>使用<a href="http://www.umeng.com/" target="_blank" rel="noopener">友盟</a> </p>
-</li>
-<li><p>首先注册一个帐号-&gt;进入个人中心-&gt;展开全部产品-&gt;选择<strong>U-Web网站统计</strong>-&gt;点击<strong>立即使用</strong>-&gt;<strong>添加站点</strong></p>
-</li>
-<li><p>然后在<code>站点设置</code> 里选择<code>获取代码</code> ，我这里选择的是 <code>横排数据显示</code> 。</p>
-</li>
-<li><p>然后把自己的代码加到 <code>footer.ejs</code> 中</p>
-</li>
-<li><p>可在<code>友盟</code>上查看最近的<strong>访问量</strong>和<strong>数据</strong> 。</p>
-</li>
-</ul>
-<h4 id="3-文章访问量统计"><a href="#3-文章访问量统计" class="headerlink" title="3. 文章访问量统计"></a>3. 文章访问量统计</h4><ul>
-<li>下面这段代码添加在<code>/themes/yilia/layout/_partial/article.ejs</code> 的header的日期后面：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 添加判断，如果首页则不显示访问量</span><br><span class="line">&lt;% if ( !index )&#123; %&gt;</span><br><span class="line">    &lt;span class=&quot;archive-article-date&quot;&gt;</span><br><span class="line">        阅读量 &lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;</span><br><span class="line">    &lt;/span&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><a href="https://meetes.top/2018/01/31/Hexo%20+%20yilia%20%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%8F%AF%E8%83%BD%E4%BC%9A%E9%81%87%E5%88%B0%E7%9A%84%E6%89%80%E6%9C%89%E7%96%91%E9%97%AE/" target="_blank" rel="noopener">Hexo + yilia 搭建博客可能会遇到的所有疑问</a> </p>
-<p><a href="http://www.lookk.cn/2017/12/09/hexo-yilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%E7%BB%9F%E8%AE%A1/" target="_blank" rel="noopener">hexo yilia主题添加文章访问量统计</a> </p>
-</blockquote>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/11/12/hexo-yilia-博客访问量统计显示/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1195,6 +1191,18 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">LeetCode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Primes</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
               </li>
              
@@ -1211,7 +1219,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">issue</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1219,19 +1227,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">备忘</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1243,7 +1239,15 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">备忘</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">issue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1251,11 +1255,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">集合</a>
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+                <a href="javascript:void(0)" class="js-tag color3">集合</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1263,19 +1267,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+                <a href="javascript:void(0)" class="js-tag color3">面试</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">时间复杂度</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">空间复杂度</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">稳定性</a>
+                <a href="javascript:void(0)" class="js-tag color3">数组</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1291,6 +1287,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">VSCode</a>
               </li>
              
@@ -1299,11 +1299,15 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">面试</a>
+                <a href="javascript:void(0)" class="js-tag color1">时间复杂度</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">数组</a>
+                <a href="javascript:void(0)" class="js-tag color1">空间复杂度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">稳定性</a>
               </li>
              
               <li class="article-tag-list-item">
