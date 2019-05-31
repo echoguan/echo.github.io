@@ -2,8 +2,15 @@
 title: 学习备忘 Tips
 categories: 技术
 date: 2019-04-22 08:47:29
-tags:
+tags: [备忘]
 ---
+
+#### Git Rebase
+
+> - [3.6 Git 分支 - 变基](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA) 
+> - [jartto - 彻底搞懂 Git-Rebase](<http://jartto.wang/2018/12/11/git-rebase/>) 
+
+
 
 #### Node.js
 

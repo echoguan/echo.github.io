@@ -38,8 +38,8 @@ tags: [Java, Serialization, 序列化]
 如何对 Java 对象进行序列化和反序列化？
 
 - 在 Java 中只要一个类实现了 `java.io.Serializable` 接口，那么它就可以被序列化。（[该接口并没有方法和字段，为什么只有实现了该接口的类的对象才能被序列化呢？](http://www.hollischuang.com/archives/1140#What Serializable Did)）
-
-- 
+- 当试图对一个对象进行序列化时，如果遇到了没有实现 Serializable 接口的对象。就会抛出 `NotSerializableException` 异常。
+- 如果要序列化的对象的类有父类，并且想要同时将在父类中定义过的变量持久化下来。那么父类也要实现 `java.io.Serializable` 接口。
 
 ### 相关接口与类
 
