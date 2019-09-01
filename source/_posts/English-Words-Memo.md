@@ -12,9 +12,9 @@ tags: [English, 英语, 单词, 备忘]
 | exclamation | n    | ！感叹、惊叹号 |                | /ˌɛkskləˈmeʃən/ |
 | colon       | n    | ：冒号         |                | /'kolən/        |
 | backticks   | n    | ` 倒引号       |                | /bæk/ /tɪk/     |
-|             |      |                |                |                 |
-|             |      |                |                |                 |
-|             |      |                |                |                 |
+| underscore  | v/n  | _ 下划线       |                | [,ʌndɚ'skɔr]    |
+| semicolon   | n    | ; 分号         |                | ['sɛmɪkolən]    |
+| comma       | n    | , 逗号         |                | ['kɑmə]         |
 |             |      |                |                |                 |
 |             |      |                |                |                 |
 |             |      |                |                |                 |
