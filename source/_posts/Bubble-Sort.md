@@ -20,6 +20,11 @@ tags: [算法, 排序, 冒泡]
 
 ### [代码实现（JAVA）](<https://github.com/echoguan/LeetCode/blob/master/src/com/echo/sort/BubbleSort.java>) 
 
+### 复杂度
+
+* Time complexity: O(n^2)
+* Space complexity: O(1)
+
 
 
 > REFERENCES
