@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://echoguan.coding.me/"/>
-  <updated>2019-05-24T06:21:15.964Z</updated>
+  <updated>2019-08-07T05:53:51.875Z</updated>
   <id>http://echoguan.coding.me/</id>
   
   <author>
@@ -15,6 +15,109 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS !! 两个感叹号操作符</title>
+    <link href="http://echoguan.coding.me/2019/08/07/JS-!!-%E4%B8%A4%E4%B8%AA%E6%84%9F%E5%8F%B9%E5%8F%B7%E6%93%8D%E4%BD%9C%E7%AC%A6/"/>
+    <id>http://echoguan.coding.me/2019/08/07/JS-!!-两个感叹号操作符/</id>
+    <published>2019-08-07T05:42:56.000Z</published>
+    <updated>2019-08-07T05:53:51.875Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><ul><li>把一个元素转换为<strong>其对应真正的布尔值</strong> ，一般用来判断某个元素是否存在。</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// base:</span></span><br><span class="line">!<span class="literal">true</span> = <span class="literal">false</span>;</span><br><span class="line">!!<span class="literal">true</span> = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// extend:</span></span><br><span class="line">  </span><br><span class="line">!!<span class="string">"0"</span> = <span class="literal">true</span>;</span><br><span class="line">!!<span class="number">1</span> = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">!!<span class="number">0</span> = <span class="literal">false</span>; </span><br><span class="line">!!<span class="string">""</span> = <span class="literal">false</span>; </span><br><span class="line">!!<span class="literal">undefined</span> = <span class="literal">false</span>;   </span><br><span class="line">!!<span class="literal">null</span> = <span class="literal">false</span>; </span><br><span class="line"><span class="keyword">var</span> a;  !!a = <span class="literal">false</span>;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;作用&quot;&gt;&lt;a href=&quot;#作用&quot; class=&quot;headerlink&quot; title=&quot;作用&quot;&gt;&lt;/a&gt;作用&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;把一个元素转换为&lt;strong&gt;其对应真正的布尔值&lt;/strong&gt; ，一般用来判断某个元素是否存在。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Java" scheme="http://echoguan.coding.me/tags/Java/"/>
+    
+      <category term="Serialization" scheme="http://echoguan.coding.me/tags/Serialization/"/>
+    
+      <category term="序列化" scheme="http://echoguan.coding.me/tags/%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常见英语词汇备忘</title>
+    <link href="http://echoguan.coding.me/2019/06/28/English-Words-Memo/"/>
+    <id>http://echoguan.coding.me/2019/06/28/English-Words-Memo/</id>
+    <published>2019-06-28T06:38:25.000Z</published>
+    <updated>2019-09-02T02:18:55.861Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="标点、英语符号"><a href="#标点、英语符号" class="headerlink" title="标点、英语符号"></a>标点、英语符号</h3><table><thead><tr><th>单词</th><th>词性</th><th>意思</th><th>示例和使用场景</th><th>发音（美）</th></tr></thead><tbody><tr><td>exclamation</td><td>n</td><td>！感叹、惊叹号</td><td></td><td>/ˌɛkskləˈmeʃən/</td></tr><tr><td>colon</td><td>n</td><td>：冒号</td><td></td><td>/‘kolən/</td></tr><tr><td>backticks</td><td>n</td><td>` 倒引号</td><td></td><td>/bæk/ /tɪk/</td></tr><tr><td>underscore</td><td>v/n</td><td>_ 下划线</td><td></td><td>[,ʌndɚ’skɔr]</td></tr><tr><td>semicolon</td><td>n</td><td>; 分号</td><td></td><td>[‘sɛmɪkolən]</td></tr><tr><td>comma</td><td>n</td><td>, 逗号</td><td></td><td>[‘kɑmə]</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;标点、英语符号&quot;&gt;&lt;a href=&quot;#标点、英语符号&quot; class=&quot;headerlink&quot; title=&quot;标点、英语符号&quot;&gt;&lt;/a&gt;标点、英语符号&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;单词&lt;/th&gt;
+&lt;th&gt;词性&lt;/th&gt;
+&lt;th&gt;意思&lt;/
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="English" scheme="http://echoguan.coding.me/tags/English/"/>
+    
+      <category term="英语" scheme="http://echoguan.coding.me/tags/%E8%8B%B1%E8%AF%AD/"/>
+    
+      <category term="单词" scheme="http://echoguan.coding.me/tags/%E5%8D%95%E8%AF%8D/"/>
+    
+      <category term="备忘" scheme="http://echoguan.coding.me/tags/%E5%A4%87%E5%BF%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 序列化</title>
+    <link href="http://echoguan.coding.me/2019/05/27/Java-Serialization/"/>
+    <id>http://echoguan.coding.me/2019/05/27/Java-Serialization/</id>
+    <published>2019-05-27T07:07:47.000Z</published>
+    <updated>2019-05-31T09:08:34.717Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>序列化是一种 <strong>对象</strong> 持久化的手段。普遍应用在网络传输、RMI（远程方法调用）等场景中。</p></blockquote><p>本篇主要会涉及以下几个方面：</p><blockquote><ul><li>序列化与反序列化</li><li>Java 对象的序列化与反序列化<ul><li>用途</li><li>示例代码</li></ul></li><li>相关接口与类</li><li><code>Transient</code> 关键字</li><li>序列化 ID <code>SerialVersionUID</code> </li></ul></blockquote><h3 id="序列化与反序列化"><a href="#序列化与反序列化" class="headerlink" title="序列化与反序列化"></a>序列化与反序列化</h3><ul><li>序列化（Serialization）是指，将 <strong>对象的状态信息</strong> 转化为 <strong>可以存储或传输的形式</strong> 的过程。</li><li>与上述相反的过程称为反序列化。</li></ul><h3 id="Java-对象的序列化与反序列化"><a href="#Java-对象的序列化与反序列化" class="headerlink" title="Java 对象的序列化与反序列化"></a>Java 对象的序列化与反序列化</h3><ul><li>Java 平台允许我们在内存中创建可以复用的 Java 对象，但一般情况下，只有当 JVM 处于运行状态时，这些对象才存在。</li><li>而在实际应用中，就可能要求在 JVM 停止运行之后仍然能够保存（持久化）指定的对象，并在将来重新读取被保存的对象。</li><li>Java 的对象序列化就是为了方便我们实现该功能。</li></ul><h4 id="序列化的用途"><a href="#序列化的用途" class="headerlink" title="序列化的用途"></a>序列化的用途</h4><ul><li>想把内存中的 <strong>对象状态</strong> ，保存到一个 <strong>文件或者数据库</strong> 中的时候。</li><li>想把对象 <strong>通过网络进行传播</strong> 的时候。</li></ul><h4 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h4><p>如何对 Java 对象进行序列化和反序列化？</p><ul><li>在 Java 中只要一个类实现了 <code>java.io.Serializable</code> 接口，那么它就可以被序列化。（[该接口并没有方法和字段，为什么只有实现了该接口的类的对象才能被序列化呢？](<a href="http://www.hollischuang.com/archives/1140#What" target="_blank" rel="noopener">http://www.hollischuang.com/archives/1140#What</a> Serializable Did)）</li><li>当试图对一个对象进行序列化时，如果遇到了没有实现 Serializable 接口的对象。就会抛出 <code>NotSerializableException</code> 异常。</li><li>如果要序列化的对象的类有父类，并且想要同时将在父类中定义过的变量持久化下来。那么父类也要实现 <code>java.io.Serializable</code> 接口。</li></ul><h3 id="相关接口与类"><a href="#相关接口与类" class="headerlink" title="相关接口与类"></a>相关接口与类</h3><ul><li><code>java.io.Serializable</code> </li><li><code>java.io.Externalizable</code> </li><li><code>ObjectOutput</code> </li><li><code>ObjectInput</code> </li><li><code>ObjectOutputStream</code> </li><li><code>ObjectInputStream</code> </li></ul><blockquote><p>WIP</p><p><a href="https://www.hollischuang.com/archives/1140" target="_blank" rel="noopener">https://www.hollischuang.com/archives/1140</a></p><p><a href="https://www.hollischuang.com/archives/1150" target="_blank" rel="noopener">https://www.hollischuang.com/archives/1150</a></p><p><a href="https://www.hollischuang.com/archives/1144" target="_blank" rel="noopener">https://www.hollischuang.com/archives/1144</a></p><p><a href="http://www.hollischuang.com/archives/205" target="_blank" rel="noopener">http://www.hollischuang.com/archives/205</a></p><p><a href="http://blademastercoder.github.io/2015/01/29/java-Serializable.html" target="_blank" rel="noopener">http://blademastercoder.github.io/2015/01/29/java-Serializable.html</a></p><p><a href="https://www.runoob.com/java/java-serialization.html" target="_blank" rel="noopener">https://www.runoob.com/java/java-serialization.html</a></p></blockquote><blockquote><p>REFERENCES</p><ul><li><a href="https://www.hollischuang.com/archives/1140" target="_blank" rel="noopener">hollis - 深入分析 Java 的序列化与反序列化</a> </li><li><a href="https://www.hollischuang.com/archives/1150" target="_blank" rel="noopener">hollis - Java 对象的序列化与反序列化</a> </li></ul></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;序列化是一种 &lt;strong&gt;对象&lt;/strong&gt; 持久化的手段。普遍应用在网络传输、RMI（远程方法调用）等场景中。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本篇主要会涉及以下几个方面：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;序
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Java" scheme="http://echoguan.coding.me/tags/Java/"/>
+    
+      <category term="Serialization" scheme="http://echoguan.coding.me/tags/Serialization/"/>
+    
+      <category term="序列化" scheme="http://echoguan.coding.me/tags/%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    
+  </entry>
   
   <entry>
     <title>计数质数 - 厄拉多塞筛法</title>
@@ -103,9 +206,9 @@
     <link href="http://echoguan.coding.me/2019/05/17/Bubble-Sort/"/>
     <id>http://echoguan.coding.me/2019/05/17/Bubble-Sort/</id>
     <published>2019-05-17T03:01:46.000Z</published>
-    <updated>2019-05-23T06:12:15.368Z</updated>
+    <updated>2019-11-22T08:07:17.811Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="算法步骤（从小到大）"><a href="#算法步骤（从小到大）" class="headerlink" title="算法步骤（从小到大）"></a>算法步骤（从小到大）</h3><ul><li><p>比较相邻两个元素，如果前一个比后一个大，就交换它们。</p></li><li><p>从最后的元素开始，对每一对相邻元素做同样的工作，从最后一对到开头第一对。之后最前面的元素是最小的数。</p></li><li><p>重复上一步，除了已经排好的最小的数。</p></li></ul><h3 id="动画演示"><a href="#动画演示" class="headerlink" title="动画演示"></a>动画演示</h3><p><img src="/images/Bubble-Sort.gif" alt="iterm2">  </p><p>动画出自 五分钟学算法 公众号，链接见最后引用。</p><h3 id="代码实现（JAVA）"><a href="#代码实现（JAVA）" class="headerlink" title="代码实现（JAVA）"></a><a href="https://github.com/echoguan/LeetCode/blob/master/src/com/echo/sort/BubbleSort.java" target="_blank" rel="noopener">代码实现（JAVA）</a></h3><blockquote><p>REFERENCES</p><ul><li><a href="https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg" target="_blank" rel="noopener">五分钟学算法 - 十大经典排序算法动画与解析，看我就够了！（配代码完全版）</a> </li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h3 id="算法步骤（从小到大）"><a href="#算法步骤（从小到大）" class="headerlink" title="算法步骤（从小到大）"></a>算法步骤（从小到大）</h3><ul><li><p>比较相邻两个元素，如果前一个比后一个大，就交换它们。</p></li><li><p>从最后的元素开始，对每一对相邻元素做同样的工作，从最后一对到开头第一对。之后最前面的元素是最小的数。</p></li><li><p>重复上一步，除了已经排好的最小的数。</p></li></ul><h3 id="动画演示"><a href="#动画演示" class="headerlink" title="动画演示"></a>动画演示</h3><p><img src="/images/Bubble-Sort.gif" alt="iterm2">  </p><p>动画出自 五分钟学算法 公众号，链接见最后引用。</p><h3 id="代码实现（JAVA）"><a href="#代码实现（JAVA）" class="headerlink" title="代码实现（JAVA）"></a><a href="https://github.com/echoguan/LeetCode/blob/master/src/com/echo/sort/BubbleSort.java" target="_blank" rel="noopener">代码实现（JAVA）</a></h3><h3 id="复杂度"><a href="#复杂度" class="headerlink" title="复杂度"></a>复杂度</h3><ul><li>Time complexity: O(n^2)</li><li>Space complexity: O(1)</li></ul><blockquote><p>REFERENCES</p><ul><li><a href="https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg" target="_blank" rel="noopener">五分钟学算法 - 十大经典排序算法动画与解析，看我就够了！（配代码完全版）</a> </li></ul></blockquote>]]></content>
     
     <summary type="html">
     
@@ -133,23 +236,25 @@
     <link href="http://echoguan.coding.me/2019/04/22/MEMO-Tips/"/>
     <id>http://echoguan.coding.me/2019/04/22/MEMO-Tips/</id>
     <published>2019-04-22T00:47:29.000Z</published>
-    <updated>2019-05-16T07:47:36.968Z</updated>
+    <updated>2019-05-31T02:50:21.376Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h4><ul><li>TLS - Transport Layer Security(传输层安全协议)<ul><li>其前身是SSL(Secure Sockets Layer, 安全套接层)</li><li>目的是为互联网通信提供安全及数据完整性保障。</li></ul></li></ul><h4 id="Node-js-ES6-CommonJS-Module-模块机制"><a href="#Node-js-ES6-CommonJS-Module-模块机制" class="headerlink" title="Node.js ES6/CommonJS Module 模块机制"></a>Node.js ES6/CommonJS Module 模块机制</h4><ul><li>exports 和 module.exports 的区别了：<ul><li>module.exports 初始值为一个空对象 {}</li><li>exports 是指向的 module.exports 的引用</li><li>require() 返回的是 module.exports 而不是 exports</li></ul></li></ul><ul><li><a href="https://www.jianshu.com/p/0bd1ae24152d" target="_blank" rel="noopener">CommonJS是什么？</a> </li><li><a href="https://cnodejs.org/topic/5a0f2da5f9de6bb0542f090b" target="_blank" rel="noopener">Node 9下import/export的丝般顺滑使用</a> </li><li><a href="http://javascript.ruanyifeng.com/nodejs/module.html" target="_blank" rel="noopener">CommonJS规范</a> </li><li><a href="http://es6.ruanyifeng.com/#docs/module-loader" target="_blank" rel="noopener">Module 的加载实现</a> </li></ul><h4 id="JavaScript：变量提升和函数提升"><a href="#JavaScript：变量提升和函数提升" class="headerlink" title="JavaScript：变量提升和函数提升"></a><a href="https://www.cnblogs.com/liuhe688/p/5891273.html" target="_blank" rel="noopener">JavaScript：变量提升和函数提升</a></h4>]]></content>
+    <content type="html"><![CDATA[<h4 id="Git-Rebase"><a href="#Git-Rebase" class="headerlink" title="Git Rebase"></a>Git Rebase</h4><blockquote><ul><li><a href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA" target="_blank" rel="noopener">3.6 Git 分支 - 变基</a> </li><li><a href="http://jartto.wang/2018/12/11/git-rebase/" target="_blank" rel="noopener">jartto - 彻底搞懂 Git-Rebase</a> </li></ul></blockquote><h4 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h4><ul><li>TLS - Transport Layer Security(传输层安全协议)<ul><li>其前身是SSL(Secure Sockets Layer, 安全套接层)</li><li>目的是为互联网通信提供安全及数据完整性保障。</li></ul></li></ul><h4 id="Node-js-ES6-CommonJS-Module-模块机制"><a href="#Node-js-ES6-CommonJS-Module-模块机制" class="headerlink" title="Node.js ES6/CommonJS Module 模块机制"></a>Node.js ES6/CommonJS Module 模块机制</h4><ul><li>exports 和 module.exports 的区别了：<ul><li>module.exports 初始值为一个空对象 {}</li><li>exports 是指向的 module.exports 的引用</li><li>require() 返回的是 module.exports 而不是 exports</li></ul></li></ul><ul><li><a href="https://www.jianshu.com/p/0bd1ae24152d" target="_blank" rel="noopener">CommonJS是什么？</a> </li><li><a href="https://cnodejs.org/topic/5a0f2da5f9de6bb0542f090b" target="_blank" rel="noopener">Node 9下import/export的丝般顺滑使用</a> </li><li><a href="http://javascript.ruanyifeng.com/nodejs/module.html" target="_blank" rel="noopener">CommonJS规范</a> </li><li><a href="http://es6.ruanyifeng.com/#docs/module-loader" target="_blank" rel="noopener">Module 的加载实现</a> </li></ul><h4 id="JavaScript：变量提升和函数提升"><a href="#JavaScript：变量提升和函数提升" class="headerlink" title="JavaScript：变量提升和函数提升"></a><a href="https://www.cnblogs.com/liuhe688/p/5891273.html" target="_blank" rel="noopener">JavaScript：变量提升和函数提升</a></h4>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h4 id=&quot;Node-js&quot;&gt;&lt;a href=&quot;#Node-js&quot; class=&quot;headerlink&quot; title=&quot;Node.js&quot;&gt;&lt;/a&gt;Node.js&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;TLS - Transport Layer Security(传输层安全协议)&lt;ul&gt;
-
+        &lt;h4 id=&quot;Git-Rebase&quot;&gt;&lt;a href=&quot;#Git-Rebase&quot; class=&quot;headerlink&quot; title=&quot;Git Rebase&quot;&gt;&lt;/a&gt;Git Rebase&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://gi
       
     
     </summary>
     
       <category term="技术" scheme="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
     
+    
+      <category term="备忘" scheme="http://echoguan.coding.me/tags/%E5%A4%87%E5%BF%98/"/>
     
   </entry>
   
@@ -483,11 +588,11 @@
       <category term="技术" scheme="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
+      <category term="备忘" scheme="http://echoguan.coding.me/tags/%E5%A4%87%E5%BF%98/"/>
+    
       <category term="JDK" scheme="http://echoguan.coding.me/tags/JDK/"/>
     
       <category term="工具" scheme="http://echoguan.coding.me/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-      <category term="备忘" scheme="http://echoguan.coding.me/tags/%E5%A4%87%E5%BF%98/"/>
     
   </entry>
   
@@ -545,9 +650,9 @@
       <category term="技术" scheme="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="工具" scheme="http://echoguan.coding.me/tags/%E5%B7%A5%E5%85%B7/"/>
-    
       <category term="备忘" scheme="http://echoguan.coding.me/tags/%E5%A4%87%E5%BF%98/"/>
+    
+      <category term="工具" scheme="http://echoguan.coding.me/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
@@ -574,103 +679,6 @@
     
     
       <category term="设计模式" scheme="http://echoguan.coding.me/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java - 基本数据类型和引用数据类型</title>
-    <link href="http://echoguan.coding.me/2018/04/04/Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    <id>http://echoguan.coding.me/2018/04/04/Java基本数据类型和引用数据类型/</id>
-    <published>2018-04-04T09:59:31.000Z</published>
-    <updated>2019-05-20T11:03:00.532Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://www.cnblogs.com/dubo-/p/5565677.html" target="_blank" rel="noopener">https://www.cnblogs.com/dubo-/p/5565677.html</a><br><a href="https://blog.csdn.net/coding_zhu/article/details/53096178" target="_blank" rel="noopener">https://blog.csdn.net/coding_zhu/article/details/53096178</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/dubo-/p/5565677.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.cnblogs.com/dubo-/p/5565677.html&lt;/a&gt;&lt;br
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>React - 组件的生命周期 - Note(3)</title>
-    <link href="http://echoguan.coding.me/2018/04/03/React%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
-    <id>http://echoguan.coding.me/2018/04/03/React组件的生命周期/</id>
-    <published>2018-04-03T09:23:10.000Z</published>
-    <updated>2019-05-20T11:03:00.539Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li>为了理解<code>React</code>的工作过程，我们必须要了解<code>React</code>组件的<strong>生命周期</strong>。</li><li>生命周期可能会经历如下三个过程：<ul><li>装载过程（<code>Mount</code>），也就是把组件第一次在<code>DOM树</code>中渲染的过程。</li><li>更新过程（<code>Update</code>），当组件被重新渲染的过程。</li><li>卸载过程（<code>Unmount</code>），组件从<code>DOM</code>中删除的过程。</li></ul></li><li>三个不同的过程中，React库会依次调用组件的一些成员函数，这些函数叫做<strong>生命周期函数</strong>。</li><li>定制一个React组件，实际上就是定制这些生命周期函数。</li></ul><h4 id="装载过程"><a href="#装载过程" class="headerlink" title="装载过程"></a>装载过程</h4><ul><li>当组件第一次被渲染的时候，依次调用的函数如下：<ul><li><code>constructor</code></li><li><code>getInitialState</code></li><li><code>getDefaultProps</code></li><li><code>componentWillMount</code></li><li><code>render</code></li><li><code>componentDidMount</code></li></ul></li></ul><a id="more"></a><h5 id="1-constructor"><a href="#1-constructor" class="headerlink" title="1. constructor"></a>1. constructor</h5><ul><li><code>constructor</code>也就是ES6中每个类的构造函数</li><li>但并不是每个组件都需要定义自己的构造函数。无状态的<code>React组件</code>往往就不需要定义构造函数。</li><li>一个组件需要构造函数，往往是为了以下的目的：<ul><li><strong>初始化<code>state</code></strong>。因为组件生命周期中任何函数都可能要访问<code>state</code>，那么整个生命周期中第一个被调用的构造函数自然是初始化<code>state</code>最理想的地方。</li><li><strong>绑定成员函数的<code>this</code>环境</strong>。</li></ul></li></ul><h5 id="2-getInitialState-和-getDefaultProps"><a href="#2-getInitialState-和-getDefaultProps" class="headerlink" title="2. getInitialState 和 getDefaultProps"></a>2. getInitialState 和 getDefaultProps</h5><ul><li>这两个方法都只有用<code>React.createClass</code>方法创造的组件类才会发生作用。<strong>使用<code>ES6</code>语法时，这两个函数根本不会产生作用</strong>。<ul><li><code>getInitialState</code>函数的返回值会用来初始化组件的<code>this.state</code>。</li><li><code>getDefaultProps</code>函数的返回值可以作为<code>props</code>的初始值。</li></ul></li><li>在<code>ES6</code>中，在构造函数中通过给<code>this.state</code>赋值完成状态的初始化；通过给类属性<code>defaultProps</code>赋值指定<code>props</code>的初始值，达到的效果是完全一样的。</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class Sample extends React.Component&#123;</span><br><span class="line">  constructor(props)&#123;</span><br><span class="line">    super(props);</span><br><span class="line">    this.state = &#123;foo : &apos;bar&apos;&#125;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Sample.defaultProps = &#123;</span><br><span class="line">  sampleProp: 0</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><ul><li><code>React.createClass</code>已经被Facebook官方逐渐废弃，不建议使用。</li></ul><h5 id="3-render"><a href="#3-render" class="headerlink" title="3. render"></a>3. render</h5><ul><li><code>render</code>函数无疑是<code>React组件</code>中最重要的函数。<ul><li>一个组件可以忽略其他所有函数都不实现，但是一定要实现<code>render函数</code>。</li><li>因为所有React组件的父类<code>React.Component类</code>对除<code>render</code>之外的生命周期函数都有默认实现。</li></ul></li><li><code>render</code>函数并不做实际的渲染动作，它只是返回一个<code>JSX</code>描述的结构，最终由<code>React</code>来操作渲染过程。</li><li>如果某些特殊组件的作用不是渲染界面，或者，在某些情况下选择没有东西可画，那就让<code>render</code>函数返回一个<code>null</code>或者<code>false</code>，告诉<code>React</code>，该组件这次不需要渲染任何<code>DOM元素</code>。</li><li><code>render函数</code>应该是一个<strong>纯函数</strong>。在<code>render</code>中调用<code>this.setState</code>毫无疑问是错误的。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;为了理解&lt;code&gt;React&lt;/code&gt;的工作过程，我们必须要了解&lt;code&gt;React&lt;/code&gt;组件的&lt;strong&gt;生命周期&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;生命周期可能会经历如下三个过程：&lt;ul&gt;
-&lt;li&gt;装载过程（&lt;code&gt;Mount&lt;/code&gt;），也就是把组件第一次在&lt;code&gt;DOM树&lt;/code&gt;中渲染的过程。&lt;/li&gt;
-&lt;li&gt;更新过程（&lt;code&gt;Update&lt;/code&gt;），当组件被重新渲染的过程。&lt;/li&gt;
-&lt;li&gt;卸载过程（&lt;code&gt;Unmount&lt;/code&gt;），组件从&lt;code&gt;DOM&lt;/code&gt;中删除的过程。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;三个不同的过程中，React库会依次调用组件的一些成员函数，这些函数叫做&lt;strong&gt;生命周期函数&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;定制一个React组件，实际上就是定制这些生命周期函数。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;装载过程&quot;&gt;&lt;a href=&quot;#装载过程&quot; class=&quot;headerlink&quot; title=&quot;装载过程&quot;&gt;&lt;/a&gt;装载过程&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;当组件第一次被渲染的时候，依次调用的函数如下：&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;constructor&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;getInitialState&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;getDefaultProps&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;componentWillMount&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;render&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;componentDidMount&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="技术" scheme="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="笔记" scheme="http://echoguan.coding.me/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="React" scheme="http://echoguan.coding.me/tags/React/"/>
-    
-      <category term="《深入浅出React和Redux》" scheme="http://echoguan.coding.me/tags/%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAReact%E5%92%8CRedux%E3%80%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>备忘 - Git Memo</title>
-    <link href="http://echoguan.coding.me/2018/04/02/Git-Memo/"/>
-    <id>http://echoguan.coding.me/2018/04/02/Git-Memo/</id>
-    <published>2018-04-02T03:05:33.000Z</published>
-    <updated>2019-05-20T11:03:00.503Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="git-提交"><a href="#git-提交" class="headerlink" title="git 提交"></a>git 提交</h2><ul><li><code>git pull</code> 同步代码到本地</li><li><code>git status</code> 查看代码的修改状态</li><li><code>git diff</code> 查看本地修改</li><li><code>git add &lt;file&gt;</code> 暂存需要提交的文件<ul><li><code>git add .</code> 暂存所有修改的文件</li></ul></li><li><code>git commit -m &quot;commit comment&quot;</code> 提交已暂存的文件</li><li><code>git push</code> 同步到服务器<ul><li><code>git push origin &lt;本地分支名&gt;</code> </li></ul></li></ul><h2 id="git-stash"><a href="#git-stash" class="headerlink" title="git stash"></a>git stash</h2><ul><li><code>git stash</code>可以用来暂存当前正在进行中的工作。<ul><li>比如想<code>pull</code>新的代码，但暂时不想加新的<code>commit</code></li><li>比如为了 fix 一个紧急的 bug，先<code>stash</code>，回到上一个<code>commit</code>的代码，改完之后再<code>git stash pop</code>，继续原来的工作。</li></ul></li><li>常用命令：<ul><li><code>git stash</code> - save uncommitted changes<ul><li><code>git stash save &quot;work in progress for A feature&quot;</code></li></ul></li><li><code>git stash pop</code> - apply last stash and remove it from the list<ul><li><code>git stash apply stash@{1}</code></li></ul></li><li><code>git stash list</code> - list stashed changes in this git</li><li><code>git stash --help</code></li><li><code>git show stash@{0}</code> - show the last stash</li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;git-提交&quot;&gt;&lt;a href=&quot;#git-提交&quot; class=&quot;headerlink&quot; title=&quot;git 提交&quot;&gt;&lt;/a&gt;git 提交&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;git pull&lt;/code&gt; 同步代码到本地&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="http://echoguan.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="git" scheme="http://echoguan.coding.me/tags/git/"/>
     
   </entry>
   
